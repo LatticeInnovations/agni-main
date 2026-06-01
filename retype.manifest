@@ -1,0 +1,789 @@
+{
+  "version": "4.0.0",
+  "created": "2026-06-01T12:22:49Z",
+  "files": [
+    {
+      "path": ".nojekyll"
+    },
+    {
+      "path": "404.html"
+    },
+    {
+      "path": "business-model\\index.html"
+    },
+    {
+      "path": "CNAME"
+    },
+    {
+      "path": "contribution-guides\\contribution\\index.html"
+    },
+    {
+      "path": "contribution-guides\\index.html"
+    },
+    {
+      "path": "contribution-guides\\internal-testing\\index.html"
+    },
+    {
+      "path": "contribution-guides\\style-guide\\index.html"
+    },
+    {
+      "path": "facade-api-docs\\appointments-scheduling\\index.html"
+    },
+    {
+      "path": "facade-api-docs\\cvd-assessment\\index.html"
+    },
+    {
+      "path": "facade-api-docs\\cvd-risk-assessment\\index.html"
+    },
+    {
+      "path": "facade-api-docs\\fileupload\\index.html"
+    },
+    {
+      "path": "facade-api-docs\\get-immunization-recommendation-list\\index.html"
+    },
+    {
+      "path": "facade-api-docs\\icd-10-integration\\index.html"
+    },
+    {
+      "path": "facade-api-docs\\image.png"
+    },
+    {
+      "path": "facade-api-docs\\immunization\\index.html"
+    },
+    {
+      "path": "facade-api-docs\\index.html"
+    },
+    {
+      "path": "facade-api-docs\\lab-reports\\index.html"
+    },
+    {
+      "path": "facade-api-docs\\medical-record\\index.html"
+    },
+    {
+      "path": "facade-api-docs\\medicationdispense\\index.html"
+    },
+    {
+      "path": "facade-api-docs\\patient\\index.html"
+    },
+    {
+      "path": "facade-api-docs\\prescription-upload\\index.html"
+    },
+    {
+      "path": "facade-api-docs\\prescription\\index.html"
+    },
+    {
+      "path": "facade-api-docs\\race-condition\\index.html"
+    },
+    {
+      "path": "facade-api-docs\\symptoms-diagnoses\\index.html"
+    },
+    {
+      "path": "facade-api-docs\\update-document-notes\\index.html"
+    },
+    {
+      "path": "facade-api-docs\\vital-apis\\index.html"
+    },
+    {
+      "path": "facade-api-docs\\vitals\\index.html"
+    },
+    {
+      "path": "fhir-resources\\appointment\\index.html"
+    },
+    {
+      "path": "fhir-resources\\condition\\index.html"
+    },
+    {
+      "path": "fhir-resources\\diagnosticreport\\index.html"
+    },
+    {
+      "path": "fhir-resources\\dispenseencounter\\index.html"
+    },
+    {
+      "path": "fhir-resources\\document-manifest\\index.html"
+    },
+    {
+      "path": "fhir-resources\\document-reference\\index.html"
+    },
+    {
+      "path": "fhir-resources\\documentreference-immunization\\index.html"
+    },
+    {
+      "path": "fhir-resources\\encounter\\index.html"
+    },
+    {
+      "path": "fhir-resources\\immunization-recommendation\\index.html"
+    },
+    {
+      "path": "fhir-resources\\immunization\\index.html"
+    },
+    {
+      "path": "fhir-resources\\immunizationencounter\\index.html"
+    },
+    {
+      "path": "fhir-resources\\index.html"
+    },
+    {
+      "path": "fhir-resources\\lab-report-encounter\\index.html"
+    },
+    {
+      "path": "fhir-resources\\location\\index.html"
+    },
+    {
+      "path": "fhir-resources\\medical-report-encounter\\index.html"
+    },
+    {
+      "path": "fhir-resources\\medication-dispense\\index.html"
+    },
+    {
+      "path": "fhir-resources\\medication-list\\index.html"
+    },
+    {
+      "path": "fhir-resources\\medication-request-photo-upload\\index.html"
+    },
+    {
+      "path": "fhir-resources\\medication-request\\index.html"
+    },
+    {
+      "path": "fhir-resources\\observation\\index.html"
+    },
+    {
+      "path": "fhir-resources\\organization\\index.html"
+    },
+    {
+      "path": "fhir-resources\\patient\\index.html"
+    },
+    {
+      "path": "fhir-resources\\person\\index.html"
+    },
+    {
+      "path": "fhir-resources\\prescription-encounter-document\\index.html"
+    },
+    {
+      "path": "fhir-resources\\prescription-encounter-form\\index.html"
+    },
+    {
+      "path": "fhir-resources\\related-person\\index.html"
+    },
+    {
+      "path": "fhir-resources\\schedule\\index.html"
+    },
+    {
+      "path": "fhir-resources\\slot\\index.html"
+    },
+    {
+      "path": "fhir-resources\\symptom-diagnosis-encounter\\index.html"
+    },
+    {
+      "path": "fhir-resources\\vitals-encounter\\index.html"
+    },
+    {
+      "path": "images\\agni-key-features.jpg"
+    },
+    {
+      "path": "images\\agni-play-store.jpg"
+    },
+    {
+      "path": "images\\agni-sync.png"
+    },
+    {
+      "path": "images\\agni-user-stories.jpg"
+    },
+    {
+      "path": "images\\components.png"
+    },
+    {
+      "path": "images\\key-features.png"
+    },
+    {
+      "path": "images\\logomark-light.png"
+    },
+    {
+      "path": "images\\representing-relationships-in-fhir.png"
+    },
+    {
+      "path": "images\\wordmark-on-dark.png"
+    },
+    {
+      "path": "images\\wordmark-on-light.png"
+    },
+    {
+      "path": "index.html"
+    },
+    {
+      "path": "key-features\\agni-household-structure.png"
+    },
+    {
+      "path": "key-features\\data-partitioning\\index.html"
+    },
+    {
+      "path": "key-features\\fhir-adoption.png"
+    },
+    {
+      "path": "key-features\\fhir-data-model\\index.html"
+    },
+    {
+      "path": "key-features\\index.html"
+    },
+    {
+      "path": "key-features\\multi-module-architecture\\index.html"
+    },
+    {
+      "path": "key-features\\offline-first\\index.html"
+    },
+    {
+      "path": "key-features\\pharmacopoeia\\index.html"
+    },
+    {
+      "path": "key-features\\relationships\\index.html"
+    },
+    {
+      "path": "mockup-android\\assets\\addresses-1.png"
+    },
+    {
+      "path": "mockup-android\\assets\\addresses-2.png"
+    },
+    {
+      "path": "mockup-android\\assets\\addresses-3.png"
+    },
+    {
+      "path": "mockup-android\\assets\\addresses-4.png"
+    },
+    {
+      "path": "mockup-android\\assets\\appointment-1.png"
+    },
+    {
+      "path": "mockup-android\\assets\\appointment-2.png"
+    },
+    {
+      "path": "mockup-android\\assets\\appointment-3.png"
+    },
+    {
+      "path": "mockup-android\\assets\\basic-1.png"
+    },
+    {
+      "path": "mockup-android\\assets\\basic-2.png"
+    },
+    {
+      "path": "mockup-android\\assets\\basic-3.png"
+    },
+    {
+      "path": "mockup-android\\assets\\basic-4.png"
+    },
+    {
+      "path": "mockup-android\\assets\\basic-5.png"
+    },
+    {
+      "path": "mockup-android\\assets\\basic-6.png"
+    },
+    {
+      "path": "mockup-android\\assets\\basic-7.png"
+    },
+    {
+      "path": "mockup-android\\assets\\basic-8.png"
+    },
+    {
+      "path": "mockup-android\\assets\\basic-9.png"
+    },
+    {
+      "path": "mockup-android\\assets\\cvd\\cvd-assessment-form-filled.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\cvd\\cvd-assessment-form-result.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\cvd\\cvd-assessment-form.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\cvd\\cvd-graph-empty.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\cvd\\cvd-records.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\cvd\\cvd-view-record.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\cvd\\patient-landing-cvd-view.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\delete-account.png"
+    },
+    {
+      "path": "mockup-android\\assets\\delete-dialog.png"
+    },
+    {
+      "path": "mockup-android\\assets\\dispense\\dispense-log.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\dispense\\dispense-prescription.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\dispense\\drug-dispense-prescriptions.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\dispense\\edit-prescribed-medication.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\dispense\\over-the-counter-filled.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\dispense\\over-the-counter.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\dispense\\view-rx.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\email-id-1.png"
+    },
+    {
+      "path": "mockup-android\\assets\\email-id-2.png"
+    },
+    {
+      "path": "mockup-android\\assets\\fab-added-to-queue.png"
+    },
+    {
+      "path": "mockup-android\\assets\\fab-appointment-scheduled.png"
+    },
+    {
+      "path": "mockup-android\\assets\\fab-walk-in.png"
+    },
+    {
+      "path": "mockup-android\\assets\\form-filled-view.png"
+    },
+    {
+      "path": "mockup-android\\assets\\household\\add-existing-member-result.png"
+    },
+    {
+      "path": "mockup-android\\assets\\household\\add-existing-member-search.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\household\\add-household-members.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\household\\add-new-household-member.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\household\\add-suggested-members.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\household\\confirm-relaation-edit.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\household\\confirm-relation-delete.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\household\\confirm-relation.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\household\\connect-nearby-suggestions-1.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\household\\connect-nearby-suggestions-2.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\household\\connect-selected-members-1.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\household\\connect-selected-members-2.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\household\\connect-selected-members-3.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\household\\connect-selected-members-confrim.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\household\\discard-selected-members.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\household\\edit-household-member.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\household\\household-members.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\household\\household-suggestions.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\household\\nearby-matches.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\household\\registration-1.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\household\\registration-2.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\household\\registration-3.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\household\\registration-preview.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\household\\select-search-member.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\household\\select-search-member.png"
+    },
+    {
+      "path": "mockup-android\\assets\\identification-1.png"
+    },
+    {
+      "path": "mockup-android\\assets\\identification-2.png"
+    },
+    {
+      "path": "mockup-android\\assets\\identification-3.png"
+    },
+    {
+      "path": "mockup-android\\assets\\identification-4.png"
+    },
+    {
+      "path": "mockup-android\\assets\\identification-5.png"
+    },
+    {
+      "path": "mockup-android\\assets\\identification-6.png"
+    },
+    {
+      "path": "mockup-android\\assets\\invalid-otp.png"
+    },
+    {
+      "path": "mockup-android\\assets\\landing.png"
+    },
+    {
+      "path": "mockup-android\\assets\\login-1.png"
+    },
+    {
+      "path": "mockup-android\\assets\\login-2.png"
+    },
+    {
+      "path": "mockup-android\\assets\\login-3.png"
+    },
+    {
+      "path": "mockup-android\\assets\\login-4.png"
+    },
+    {
+      "path": "mockup-android\\assets\\otp.png"
+    },
+    {
+      "path": "mockup-android\\assets\\patient-list-1.png"
+    },
+    {
+      "path": "mockup-android\\assets\\patient-list-2.png"
+    },
+    {
+      "path": "mockup-android\\assets\\patient-list-3.png"
+    },
+    {
+      "path": "mockup-android\\assets\\patient-profile-1.png"
+    },
+    {
+      "path": "mockup-android\\assets\\patient-profile-2.png"
+    },
+    {
+      "path": "mockup-android\\assets\\patient-profile-3.png"
+    },
+    {
+      "path": "mockup-android\\assets\\patient-profile-4.png"
+    },
+    {
+      "path": "mockup-android\\assets\\patient-profile-5.png"
+    },
+    {
+      "path": "mockup-android\\assets\\patient-profile-6.png"
+    },
+    {
+      "path": "mockup-android\\assets\\prescription\\add-prescription-options.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\prescription\\fill-selected-prescription.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\prescription\\filled-prescription-view.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\prescription\\patient-landing.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\prescription\\prescription-upload-picture.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\prescription\\prescription-view.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\prescription\\select-item-prescription.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\prescription\\view-selection-prescription.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\prescription\\view-uploaded-prescription.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\preview-1.png"
+    },
+    {
+      "path": "mockup-android\\assets\\preview-2.png"
+    },
+    {
+      "path": "mockup-android\\assets\\profile-1.png"
+    },
+    {
+      "path": "mockup-android\\assets\\profile-2.png"
+    },
+    {
+      "path": "mockup-android\\assets\\profile-delete-option.png"
+    },
+    {
+      "path": "mockup-android\\assets\\queue-1.png"
+    },
+    {
+      "path": "mockup-android\\assets\\queue-2.png"
+    },
+    {
+      "path": "mockup-android\\assets\\queue-3.png"
+    },
+    {
+      "path": "mockup-android\\assets\\queue-4.png"
+    },
+    {
+      "path": "mockup-android\\assets\\reschedule-1.png"
+    },
+    {
+      "path": "mockup-android\\assets\\reschedule-2.png"
+    },
+    {
+      "path": "mockup-android\\assets\\reschedule-3.png"
+    },
+    {
+      "path": "mockup-android\\assets\\reschedule-4.png"
+    },
+    {
+      "path": "mockup-android\\assets\\schedule-1.png"
+    },
+    {
+      "path": "mockup-android\\assets\\schedule-2.png"
+    },
+    {
+      "path": "mockup-android\\assets\\schedule-3.png"
+    },
+    {
+      "path": "mockup-android\\assets\\search-1.png"
+    },
+    {
+      "path": "mockup-android\\assets\\search-2.png"
+    },
+    {
+      "path": "mockup-android\\assets\\search-3.png"
+    },
+    {
+      "path": "mockup-android\\assets\\select-medication.png"
+    },
+    {
+      "path": "mockup-android\\assets\\sign-up.png"
+    },
+    {
+      "path": "mockup-android\\assets\\signupdelete\\index.html"
+    },
+    {
+      "path": "mockup-android\\assets\\unsuccessful-1.png"
+    },
+    {
+      "path": "mockup-android\\assets\\unsuccessful-2.png"
+    },
+    {
+      "path": "mockup-android\\assets\\unsuccessful-3.png"
+    },
+    {
+      "path": "mockup-android\\assets\\unsuccessful-4.png"
+    },
+    {
+      "path": "mockup-android\\assets\\unsuccessful-5.png"
+    },
+    {
+      "path": "mockup-android\\assets\\unsuccessful-6.png"
+    },
+    {
+      "path": "mockup-android\\assets\\unsuccessful-7.png"
+    },
+    {
+      "path": "mockup-android\\assets\\vaccination\\add-searched-vaccination.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\vaccination\\add-vaccination-due.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\vaccination\\add-vaccination-empty.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\vaccination\\add-vaccination-filled.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\vaccination\\add-vaccination-search.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\vaccination\\add-vaccination-upload-error.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\vaccination\\error-1.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\vaccination\\error.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\vaccination\\no-missed-vaccination.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\vaccination\\vaccination-missed.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\vaccination\\vaccination-taken.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\vaccination\\vaccination.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\vaccination\\view-doc.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\vaccination\\view-vaccination.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\vitals\\add-vitals-empty.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\vitals\\add-vitals-filled.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\vitals\\blood-glucose.png"
+    },
+    {
+      "path": "mockup-android\\assets\\vitals\\blood-pressure.png"
+    },
+    {
+      "path": "mockup-android\\assets\\vitals\\heart-rate.png"
+    },
+    {
+      "path": "mockup-android\\assets\\vitals\\respiratory-rate.png"
+    },
+    {
+      "path": "mockup-android\\assets\\vitals\\spo2.png"
+    },
+    {
+      "path": "mockup-android\\assets\\vitals\\vitals-all-record.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\vitals\\vitals-cvd-record.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\vitals\\vitals-empty-graph.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\vitals\\vitals-record-expand.jpg"
+    },
+    {
+      "path": "mockup-android\\assets\\vitals\\weight.jpg"
+    },
+    {
+      "path": "mockup-android\\index.html"
+    },
+    {
+      "path": "model-design\\dispensing\\index.html"
+    },
+    {
+      "path": "model-design\\index.html"
+    },
+    {
+      "path": "model-design\\organization\\index.html"
+    },
+    {
+      "path": "model-design\\practitioner\\index.html"
+    },
+    {
+      "path": "model-design\\referral\\index.html"
+    },
+    {
+      "path": "model-design\\scheduling\\index.html"
+    },
+    {
+      "path": "resources\\css\\retype.css"
+    },
+    {
+      "path": "resources\\fonts\\Inter-italic-latin-var.woff2"
+    },
+    {
+      "path": "resources\\fonts\\Inter-roman-latin-var.woff2"
+    },
+    {
+      "path": "resources\\js\\config.js"
+    },
+    {
+      "path": "resources\\js\\lunr.js"
+    },
+    {
+      "path": "resources\\js\\mermaid.js"
+    },
+    {
+      "path": "resources\\js\\prism.js"
+    },
+    {
+      "path": "resources\\js\\retype.js"
+    },
+    {
+      "path": "resources\\js\\search.json"
+    },
+    {
+      "path": "resources\\lunr.js.LICENSE.txt"
+    },
+    {
+      "path": "resources\\mermaid.js.LICENSE.txt"
+    },
+    {
+      "path": "resources\\prism.js.LICENSE.txt"
+    },
+    {
+      "path": "resources\\retype.js.LICENSE.txt"
+    },
+    {
+      "path": "resources\\retype.LICENSE.txt"
+    },
+    {
+      "path": "robots.txt"
+    },
+    {
+      "path": "sitemap.xml.gz"
+    },
+    {
+      "path": "static\\custom.css"
+    },
+    {
+      "path": "to-sort\\dispensingscope\\index.html"
+    },
+    {
+      "path": "user-stories\\01-walk-in-visit\\index.html"
+    },
+    {
+      "path": "user-stories\\02-lab-test\\index.html"
+    },
+    {
+      "path": "user-stories\\03-consultation\\index.html"
+    },
+    {
+      "path": "user-stories\\04-dispensing\\index.html"
+    },
+    {
+      "path": "user-stories\\05-follow-up\\index.html"
+    },
+    {
+      "path": "user-stories\\06-referred-out\\index.html"
+    },
+    {
+      "path": "user-stories\\07-referral-visit\\index.html"
+    },
+    {
+      "path": "user-stories\\08-next-chapter\\index.html"
+    },
+    {
+      "path": "user-stories\\index.html"
+    }
+  ]
+}

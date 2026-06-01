@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.0.0.833631763495">
+
+    <!-- See retype.com -->
+    <meta name="generator" content="Retype 4.0.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Pre-read</title>
+    <meta name="title" content="Pre-read">
+    <meta name="description" content="User Stories > Dispensing">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://docs.example.com/to-sort/dispensingscope/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://docs.example.com/to-sort/dispensingscope/">
+    <meta property="og:title" content="Pre-read">
+    <meta property="og:description" content="User Stories > Dispensing">
+    <meta property="og:site_name" content="Project Name">
+    <meta property="og:locale" content="en_US">
+
+    <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
+
+    <link href="../../resources/css/retype.css?v=4.0.0.833631763495" rel="stylesheet">
+
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.0.0.833631763495" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=4.0.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.0.0.833631763495" data-turbo-eval="false" defer></script>
+</head>
+<body>
+    <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
+    <div class="absolute bottom-0 left-0" style="top: 5rem; right: 50%"></div>
+
+    <header id="retype-header" class="sticky top-0 z-30 flex w-full h-16 bg-header-bg border-b border-header-border md:h-20">
+        <div class="container relative flex items-center justify-between pr-6 grow md:justify-start">
+            <!-- Mobile menu button skeleton -->
+            <button v-cloak class="skeleton retype-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-hidden rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
+            <div v-cloak id="retype-sidebar-left-toggle-button"></div>
+    
+            <!-- Logo -->
+            <div class="flex items-center justify-between h-full py-2 md:w-75">
+                <div class="flex items-center px-2 md:px-6">
+                    <a id="retype-branding-logo" href="../../" class="flex items-center leading-snug text-2xl">
+                        <span class="dark:text-white font-bold line-clamp-1 md:line-clamp-2">Project Name</span>
+                    </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">Docs</span>
+                </div>
+    
+                <span class="hidden h-8 border-r md:inline-block border-base-border"></span>
+            </div>
+    
+            <div class="flex justify-between md:grow">
+                <!-- Top Nav -->
+                <nav id="retype-header-nav" class="hidden md:flex">
+                    <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
+                        <li class="mr-6">
+                            <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://retype.com/guides/getting-started/">Getting Started</a>
+                        </li>
+    
+                    </ul>
+                </nav>
+    
+                <div v-cloak class="flex justify-end grow">
+                    <div id="retype-mobile-search-button"></div>
+                    <doc-search-desktop></doc-search-desktop>
+    
+                    <doc-theme-switch class="lg:ml-2"></doc-theme-switch>
+                    <doc-history></doc-history>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div id="retype-container" class="container relative flex bg-white">
+        <!-- Sidebar Skeleton -->
+        <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-sidebar-left-bg border-sidebar-left-border sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton">
+        
+            <div class="flex items-center h-16 px-6">
+                <input id="retype-filter-input-mock" class="w-full h-10 pl-8 px-3 py-2 transition-colors duration-200 ease-linear bg-filter-bg border border-filter-border rounded-lg shadow-none md:text-sm hover:border-filter-border-hover focus:outline-hidden focus:border-filter-border-focus placeholder-filter-placeholder" type="text">
+            </div>
+        
+            <div class="pl-6 mt-1 mb-4">
+                <div class="w-32 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                <div class="w-48 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                <div class="w-40 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                <div class="w-32 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                <div class="w-48 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                <div class="w-40 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+            </div>
+        
+            <div class="shrink-0 mt-auto bg-transparent dark:border-base-border">
+                <a class="flex items-center justify-center flex-nowrap h-16 text-gray-350 dark:text-dark-400 hover:text-gray-600 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                    <span class="text-xs whitespace-nowrap">Powered by</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Sidebar component -->
+        <doc-sidebar v-cloak>
+            <template #sidebar-footer>
+                <div class="shrink-0 mt-auto border-t md:bg-transparent md:border-none dark:border-base-border">
+        
+                    <div class="py-3 px-6 md:hidden border-b dark:border-base-border">
+                        <nav>
+                            <ul class="flex flex-wrap justify-center items-center">
+                                <li class="mr-6">
+                                    <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://retype.com/guides/getting-started/">Getting Started</a>
+                                </li>
+        
+                            </ul>
+                        </nav>
+                    </div>
+        
+                    <a class="flex items-center justify-center flex-nowrap h-16 text-gray-350 dark:text-dark-400 hover:text-gray-600 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                        <span class="text-xs whitespace-nowrap">Powered by</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                    </a>
+                </div>
+            </template>
+        </doc-sidebar>
+
+        <div class="grow min-w-0 bg-body-bg">
+            <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
+<div class="flex">
+    <div id="retype-main" class="min-w-0 p-4 grow md:px-16">
+        <main class="relative pb-12 lg:pt-2">
+            <div class="retype-markdown" id="retype-content">
+                <!-- Rendered if sidebar right is enabled -->
+                <div id="retype-sidebar-right-toggle"></div>
+                <!-- Page content  -->
+<doc-anchor-target id="pre-read" class="break-words">
+    <h1>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#pre-read">#</doc-anchor-trigger>
+        <span>Pre-read</span>
+    </h1>
+</doc-anchor-target>
+<p>User Stories &gt; <a href="../../user-stories/04-dispensing/">Dispensing</a></p>
+<doc-anchor-target id="idea-in-brief">
+    <h1>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#idea-in-brief">#</doc-anchor-trigger>
+        <span>Idea in brief</span>
+    </h1>
+</doc-anchor-target>
+<p>This scope document covers three actions by the Pharmacist:</p>
+<ol>
+<li>Dispense all or part of what has been prescribed.</li>
+<li>Adjust what is dispensed, as long as it does not change the dose or the active ingredient.</li>
+<li>Dispense over-the-counter (OTC) medication.</li>
+</ol>
+<doc-anchor-target id="from-user-story-to-scope">
+    <h1>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#from-user-story-to-scope">#</doc-anchor-trigger>
+        <span>From User story to Scope</span>
+    </h1>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th style="text-align: left;">Story</th>
+<th style="text-align: left;">Scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">After leaving Dr. Sood&#x27;s room, Birender walked over to the pharmacy. Imtiaz Ali, the pharmacist, asked whether Birender has just had a consultation. Birender nodded. Imtiaz then looked up recent consultations, and asked, &quot;You are Birender, right?&quot;.</td>
+<td style="text-align: left;">The Pharmacist should be able to see recent prescriptions, sort by date, and search by patient name and other patient identifiers. A prescription should be easily convertible into a dispensing record.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Birender remembered that Simran had handed him a slip the previous evening, with medicines that she wanted to keep handy. Birender showed the slip to Imtiaz. It said, &quot;Paracetamol 650 mg, two strips.&quot; Not even a please or a thank you.</td>
+<td style="text-align: left;">The Pharmacist should be able to dispense over-the-counter (OTC) medication without requiring a prescription, while fulfilling a prescription.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Imtiaz checked his stocks. He has 1,947 tablets of Paracetamol 650 mg in stock. He also has 970 tablets of Amlodipine 2.5 mg, 663 tablets of Amlodipine 5 mg, but only 78 tablets of Metformin 500 mg in stock.</td>
+<td style="text-align: left;"><code translate="no" v-pre>Out of scope</code>: Agni does not include inventory management. It shall provide master list of drugs, and a FHIR API interface with a supply chain management system.</td>
+</tr>
+<tr>
+<td style="text-align: left;">He dispensed 90 tablets of Amlodipine 2.5 mg, 15 tablets of Metformin 500 mg and 20 tablets of Paracetamol 650 mg to Birender.</td>
+<td style="text-align: left;">Before dispensing medicines, the Pharmacist should be able to modify items dispensed based on their availability. Substitutions that <em>do not</em> change the active ingredient shall be allowed by the system. Also, the Pharmacist shall be able to fulfill prescription line items partially, or skip them. These differences shall be visible in the App. Finally, the Pharmacist shall <em>not</em> be able to oversupply medicines, i.e. dispense medicines in excess of the amount prescribed.</td>
+</tr>
+<tr>
+<td style="text-align: left;">He asks Birender to take both of his prescribed medicines after supper, so that it is easier to track.</td>
+<td style="text-align: left;">The pharmacist shall be able to add notes to the overall dispensing record. Frequently occurring notes shall be provided in a selectable form.</td>
+</tr>
+<tr>
+<td style="text-align: left;">While logging medicines dispensed, he changed 30 x 7.5 mg Amlodipine to 90 x 2.5 mg Amlodipine, reduced the number of Metformin tablets, and added an entry for Paracetamol.</td>
+<td style="text-align: left;">OTC medicines shall be visually distinct in the app, and the system shall make it clear that they are not a part of the prescription.</td>
+</tr>
+<tr>
+<td style="text-align: left;">As soon as Imtiaz saved his dispensing records, Birender got a message with the details of the Amlodipine and Metformin dispensed to him. The message also stated that there was a 15-day shortfall between the prescription and its fulfillment.</td>
+<td style="text-align: left;">The dispensing record shall be sent to the patient via SMS. Any shortfalls in supply shall be clearly mentioned in the SMS. If a patient&#x27;s email is available, the same information shall also be emailed.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Finally, Imtiaz printed out a receipt, and collected payment. Birender only paid only for the Paracetamol; the other medicines were provided at no charge by the public health system.</td>
+<td style="text-align: left;"><code translate="no" v-pre>Out of scope</code> - Agni does not integrate with billing software. It shall provide FHIR API interfaces to send dispensing details to a billing system—which may be a part of the supply chain management system referenced earlier.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="implementing-the-scope-via-fhir">
+    <h1>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#implementing-the-scope-via-fhir">#</doc-anchor-trigger>
+        <span>Implementing the scope via FHIR</span>
+    </h1>
+</doc-anchor-target>
+<p>FHIR provides us with the <a href="https://www.hl7.org/fhir/medicationdispense.html">MedicationDispense</a> resource to capture dispensing of medicines by the Pharmacist, for future consumption by a Patient.</p>
+<ol>
+<li>Searching for prescriptions: Pharmacists start their journey from the Prescription step. Just like a front-office, they need a view which consolidates all recent prescriptions, sortable by date, and searchable by patient name and ID.</li>
+<li>Converting prescriptions into dispensing records: A prescription groups <code translate="no" v-pre>MedicationRequest</code> instances, and each instance contains details of a single medicine. Each <code translate="no" v-pre>MedicationRequest</code> instance can be mapped 1:1 to a <code translate="no" v-pre>MedicationDispense</code> instance, because the former contains all the clinical information needed to create the latter.</li>
+<li>Dispensing multiple medicines at the same time: Just as prescriptions contain multiple <code translate="no" v-pre>MedicationRequest</code> instances, pharmacists also need to create multiple <code translate="no" v-pre>MedicationDispense</code> instances at the same time. This shall be accomplished by grouping all such instances within a single <code translate="no" v-pre>Encounter</code> instance.</li>
+<li>Validating dispensing records against prescription: This is addressed in detail in the next section.</li>
+<li>Adding notes: The pharmacist shall be able to add notes to the <code translate="no" v-pre>Encounter</code>, and to individual line items.</li>
+<li>Dispensing over-the-counter (OTC) medicines: The system shall allow the Pharmacist to dispense OTC medicines concurrently with prescribed medicines. Pharmacists shall also be able to create fresh dispensing records that only contain OTC medicines, with reference to any prior prescription.</li>
+<li>Identifying OTC medicines: The app shall use visual language that clearly indicates that a particular <code translate="no" v-pre>MedicationDispense</code> resource is for an OTC medicine. The system shall show an auto-generated note clarifying that they are not a part of the prescription. The Pharmacist shall be able to edit or delete this note.</li>
+<li>Patient notification - via SMS and email: The dispensing record shall be sent to the patient via SMS. Any shortfalls in supply shall be clearly mentioned in the SMS.</li>
+</ol>
+<doc-anchor-target id="validating-dispensing-records-against-prescriptions">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#validating-dispensing-records-against-prescriptions">#</doc-anchor-trigger>
+        <span>Validating dispensing records against prescriptions</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="a-pharmacist-shall-be-able-to">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#a-pharmacist-shall-be-able-to">#</doc-anchor-trigger>
+        <span>A pharmacist shall be able to</span>
+    </h3>
+</doc-anchor-target>
+<ol>
+<li>Dispense less than the prescribed amount — even zero (i.e. not dispense against a particular line item).</li>
+<li>Change the medication strength per dose — such as replacing a 5 mg tablet with two 2.5 mg tablets, or vice versa.</li>
+<li>Change the salt form of the medicine, without changing the active ingredient<a id="fnref:1" href="#fn:1" class="footnote-ref"><sup>1</sup></a>.</li>
+</ol>
+<doc-anchor-target id="a-pharmacist-shall-not-be-able-to">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#a-pharmacist-shall-not-be-able-to">#</doc-anchor-trigger>
+        <span>A pharmacist shall not be able to</span>
+    </h3>
+</doc-anchor-target>
+<ol>
+<li>Dispense in excess of the total amount prescribed, i.e. quantity per dose x number of doses. Thus, a pharmacist shall not be able to dispense 60 tabs of Amlodipine, when 1 tab x 30 days has been prescribed.</li>
+<li>Dispense quantity per dose different from the prescription. Hence, against a dose of  prescription of 7.5 mg Amlodipine, while a pharmacist can supply 3 x 2.5 mg Amlodipine tablet, they cannot to supply either 1 x 5 mg tab, or 2 x 5 mg tab.</li>
+</ol>
+<doc-anchor-target id="data-considerations">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#data-considerations">#</doc-anchor-trigger>
+        <span>Data considerations</span>
+    </h2>
+</doc-anchor-target>
+<p>There has to be a mechanism to tag whether a medicine is OTC or not.</p>
+<doc-anchor-target id="the-medicationdispense-resource">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#the-medicationdispense-resource">#</doc-anchor-trigger>
+        <span>The <code translate="no" v-pre>MedicationDispense</code> resource</span>
+    </h2>
+</doc-anchor-target>
+<p>The resource&#x27;s complete schema is presented below; excluded elements are marked with <span class="docs-emoji">&#x274C;</span>.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th style="text-align: left;">Element</th>
+<th style="text-align: left;">Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code translate="no" v-pre>identifier</code></td>
+<td style="text-align: left;">FHIR&#x27;s identifier for the resource instance</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code translate="no" v-pre>basedOn</code></td>
+<td style="text-align: left;"><span class="docs-emoji">&#x274C;</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code translate="no" v-pre>partOf</code></td>
+<td style="text-align: left;"><span class="docs-emoji">&#x274C;</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code translate="no" v-pre>medication</code></td>
+<td style="text-align: left;">as implemented in <code translate="no" v-pre>MedicationRequest</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code translate="no" v-pre>subject</code></td>
+<td style="text-align: left;"><code translate="no" v-pre>Patient</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code translate="no" v-pre>encounter</code></td>
+<td style="text-align: left;"><code translate="no" v-pre>Encounter</code> resource instance that groups all <code translate="no" v-pre>MedicationDispense</code> that are created together.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code translate="no" v-pre>authorizingPrescription</code></td>
+<td style="text-align: left;"><code translate="no" v-pre>MedicationRequest</code> instance that triggered this dispense. FHIR allows for <code translate="no" v-pre>1:n</code>, but we shall use <code translate="no" v-pre>1:1</code>. Absent for OTC medication.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code translate="no" v-pre>quantity</code></td>
+<td style="text-align: left;">total count (units) dispensed, such as 10 tablets, 1 inhaler, 1 tube of cream etc.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code translate="no" v-pre>daysSupply</code></td>
+<td style="text-align: left;">days for which the medicine has been supplied. Applies to <code translate="no" v-pre>MedicationRequests</code> with doses per day, times a particular number of days. Absent for OTC medication.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code translate="no" v-pre>recorded</code></td>
+<td style="text-align: left;"><span class="docs-emoji">&#x274C;</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code translate="no" v-pre>whenPrepared</code></td>
+<td style="text-align: left;"><span class="docs-emoji">&#x274C;</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code translate="no" v-pre>whenHandedOver</code></td>
+<td style="text-align: left;">Same date-time stamp as the parent <code translate="no" v-pre>Encounter</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code translate="no" v-pre>receiver</code></td>
+<td style="text-align: left;">Leave blank. This field can point to both <code translate="no" v-pre>Patient</code> and <code translate="no" v-pre>RelatedPerson</code>resources. The latter in case someone is picking up medication on behalf of the Patient.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code translate="no" v-pre>note</code></td>
+<td style="text-align: left;">Auto-generated for OTC medication. Can be made available for others too.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code translate="no" v-pre>renderedDosageInstruction</code></td>
+<td style="text-align: left;"><span class="docs-emoji">&#x274C;</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code translate="no" v-pre>dosageInstruction</code></td>
+<td style="text-align: left;"><span class="docs-emoji">&#x274C;</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code translate="no" v-pre>substitution</code></td>
+<td style="text-align: left;">If yes, we will only populate the <code translate="no" v-pre>.substitution.type</code> with code <code translate="no" v-pre>EC</code>, or equivalent composition, from <a href="https://terminology.hl7.org/5.1.0/ValueSet-v3-ActSubstanceAdminSubstitutionCode.html">this valueset</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="limitations">
+    <h1>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#limitations">#</doc-anchor-trigger>
+        <span>Limitations</span>
+    </h1>
+</doc-anchor-target>
+<ol>
+<li>Agni shall not provide an inventory management system out-of-the-box. Custom integration is feasible. In the absence of integration, the Pharmacist shall have to consult their physical or electronic inventory records before dispensing medicines.</li>
+<li>Agni shall not provide billing. This is often bundled with inventory management systems.</li>
+<li>The current version of Agni shall not support medicine dispensing at the doorstep by Community Health Workers (CHWs). This feature can be developed if required by healthcare systems — it requires dispensing permissions for certain medicines to be extended to CHWs.</li>
+<li>Dispensing records shall presume that medicines have been picked up by the <code translate="no" v-pre>Patient</code>. LatticeOnFHIR shall not support medicine pickup by a <code translate="no" v-pre>RelatedPerson</code></li>
+</ol>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn:1">
+<p>This rule is configurable. It can be made more restrictive, so that the Pharmacist cannot change even the salt form.<a href="#fnref:1" class="footnote-back-ref">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+                
+                <!-- Required only on API pages -->
+                <doc-toolbar-member-filter-no-results></doc-toolbar-member-filter-no-results>
+            </div>
+            <footer id="retype-content-footer" class="clear-both">
+            
+            </footer>
+        </main>
+
+        <div id="retype-page-footer" class="print:border-none border-t border-base-border pt-6 mb-8">
+            <footer class="flex flex-wrap items-center justify-between print:justify-center">
+                <div id="retype-footer-links" class="print:hidden">
+                    <ul class="flex flex-wrap items-center text-sm">
+                    </ul>
+                </div>
+                <div id="retype-copyright" class="print:justify-center py-2 text-footer-text font-footer-link text-sm leading-relaxed"><p>© Copyright 2026. All rights reserved.</p></div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Rendered if sidebar right is enabled -->
+    <!-- Sidebar right skeleton-->
+    <div v-cloak class="fixed top-0 bottom-0 right-0 translate-x-full bg-sidebar-right-bg border-sidebar-right-border lg:sticky lg:border-l lg:shrink-0 lg:pt-6 lg:translate-x-0 sm:w-1/2 lg:w-64 lg:z-0 md:w-104 sidebar-right skeleton">
+        <div class="pl-5">
+            <div class="w-32 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+            <div class="w-48 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+            <div class="w-40 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+        </div>
+    </div>
+
+    <!-- User should be able to hide sidebar right -->
+    <doc-sidebar-right v-cloak></doc-sidebar-right>
+</div>
+
+        </div>
+    </div>
+
+    <doc-search-mobile></doc-search-mobile>
+    <doc-back-to-top></doc-back-to-top>
+</div>
+
+
+    <div id="retype-overlay-target"></div>
+
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Pre-read", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+</body>
+</html>
