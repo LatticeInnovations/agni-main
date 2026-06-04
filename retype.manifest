@@ -1,6 +1,6 @@
 {
   "version": "4.0.0",
-  "created": "2026-06-01T12:22:49Z",
+  "created": "2026-06-04T06:54:24Z",
   "files": [
     {
       "path": ".nojekyll"
@@ -85,6 +85,9 @@
     },
     {
       "path": "facade-api-docs\\vitals\\index.html"
+    },
+    {
+      "path": "favicon.ico"
     },
     {
       "path": "fhir-resources\\appointment\\index.html"

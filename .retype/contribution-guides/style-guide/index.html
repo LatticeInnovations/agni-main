@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.0.0.833631763495">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.0.0.833871258022">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.0.0">
@@ -15,24 +15,27 @@
     <meta name="description" content="This style guide assumes that you have Retype up and running. Once you build and view the site locally, spend 30 minutes browsing through Retype's docs on">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://docs.example.com/contribution-guides/style-guide/">
+    <link rel="canonical" href="https://agni.thelattice.in/contribution-guides/style-guide/">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://docs.example.com/contribution-guides/style-guide/">
+    <meta property="og:url" content="https://agni.thelattice.in/contribution-guides/style-guide/">
     <meta property="og:title" content="Style guide">
     <meta property="og:description" content="This style guide assumes that you have Retype up and running. Once you build and view the site locally, spend 30 minutes browsing through Retype's docs on">
-    <meta property="og:site_name" content="Project Name">
+    <meta property="og:site_name" content="">
     <meta property="og:locale" content="en_US">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="../../resources/css/retype.css?v=4.0.0.833631763495" rel="stylesheet">
+    <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
+    <link href="../../resources/css/retype.css?v=4.0.0.833871258022" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.0.0.833631763495" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.0.0.833871258022" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.0.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.0.0.833631763495" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=4.0.0.833631763495" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.0.0.833871258022" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=4.0.0.833871258022" defer></script>
+
+    <link href="/static/custom.css" rel="stylesheet" />
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -48,8 +51,11 @@
             <div class="flex items-center justify-between h-full py-2 md:w-75">
                 <div class="flex items-center px-2 md:px-6">
                     <a id="retype-branding-logo" href="../../" class="flex items-center leading-snug text-2xl">
-                        <span class="dark:text-white font-bold line-clamp-1 md:line-clamp-2">Project Name</span>
-                    </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">Docs</span>
+                        <span class="grow-0 shrink-0 overflow-hidden">
+                            <img class="max-h-10 dark:hidden md:inline-block" src="../../images/wordmark-on-light.png">
+                            <img class="max-h-10 hidden dark:inline-block" src="../../images/wordmark-on-dark.png">
+                        </span>
+                    </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">Agni by Lattice</span>
                 </div>
     
                 <span class="hidden h-8 border-r md:inline-block border-base-border"></span>
@@ -60,7 +66,7 @@
                 <nav id="retype-header-nav" class="hidden md:flex">
                     <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
                         <li class="mr-6">
-                            <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://retype.com/guides/getting-started/">Getting Started</a>
+                            <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://thelattice.in">Go to main website</a>
                         </li>
     
                     </ul>
@@ -95,12 +101,6 @@
                 <div class="w-40 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
             </div>
         
-            <div class="shrink-0 mt-auto bg-transparent dark:border-base-border">
-                <a class="flex items-center justify-center flex-nowrap h-16 text-gray-350 dark:text-dark-400 hover:text-gray-600 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
-                    <span class="text-xs whitespace-nowrap">Powered by</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
-                </a>
-            </div>
         </div>
         
         <!-- Sidebar component -->
@@ -112,17 +112,12 @@
                         <nav>
                             <ul class="flex flex-wrap justify-center items-center">
                                 <li class="mr-6">
-                                    <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://retype.com/guides/getting-started/">Getting Started</a>
+                                    <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://thelattice.in">Go to main website</a>
                                 </li>
         
                             </ul>
                         </nav>
                     </div>
-        
-                    <a class="flex items-center justify-center flex-nowrap h-16 text-gray-350 dark:text-dark-400 hover:text-gray-600 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
-                        <span class="text-xs whitespace-nowrap">Powered by</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
-                    </a>
                 </div>
             </template>
         </doc-sidebar>
@@ -135,6 +130,32 @@
             <div class="retype-markdown" id="retype-content">
                 <!-- Rendered if sidebar right is enabled -->
                 <div id="retype-sidebar-right-toggle"></div>
+                <nav id="retype-breadcrumb" class="breadcrumb" aria-label="Breadcrumb">
+                    <ol role="list">
+                        <li class="pr-4">
+                            <a href="../../" class="pr-4">
+                                 What is Agni?
+                            </a>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
+                            </svg>
+                        </li>
+                        <li class="pr-4">
+                            <a href="../../contribution-guides/" class="pr-4">
+                                Contributing to Agni
+                            </a>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
+                            </svg>
+                        </li>
+                        <li class="pr-4">
+                            <a href="../../contribution-guides/style-guide/" class="pr-4">
+                                Style guide
+                            </a>
+                        </li>
+                    </ol>
+                </nav>
+
                 <!-- Page content  -->
 <doc-anchor-target id="style-guide" class="break-words">
     <h1>
@@ -142,7 +163,7 @@
         <span>Style guide</span>
     </h1>
 </doc-anchor-target>
-<p>This style guide assumes that you have <a href="https://retype.com/guides/getting-started/">Retype up and running</a>. Once you build and view the site locally, spend 30 minutes browsing through Retype&#x27;s docs on <a href="https://retype.com/configuration/project/">configuration</a> and <a href="https://retype.com/components/">components</a>.</p>
+<p>This style guide assumes that you have <a href="https://retype.com/guides/getting-started/" class="outbound" target="_blank"><span>Retype up and running</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a>. Once you build and view the site locally, spend 30 minutes browsing through Retype&#x27;s docs on <a href="https://retype.com/configuration/project/" class="outbound" target="_blank"><span>configuration</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> and <a href="https://retype.com/components/" class="outbound" target="_blank"><span>components</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a>.</p>
 <p>Only then should you continue with this style guide. It is best viewed as a web page.</p>
 <doc-anchor-target id="naming-convention">
     <h2>
@@ -171,7 +192,7 @@
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>Here is a <a href="https://github.com/LatticeInnovations/LatticeOnFhirMain/commit/7c657c123a2e85c78f21e8d784ee2da0a74063ea">example</a> of a commit in which index pages were added.</p>
+<p>Here is a <a href="https://github.com/LatticeInnovations/LatticeOnFhirMain/commit/7c657c123a2e85c78f21e8d784ee2da0a74063ea" class="outbound" target="_blank"><span>example</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> of a commit in which index pages were added.</p>
         </div>
     </div>
 </div>
@@ -181,7 +202,7 @@
         <span>Default page</span>
     </h3>
 </doc-anchor-target>
-<p><code translate="no" v-pre>index.md</code> acts as the landing page for a section. It can be left empty, with just a level 1 heading. It can also be named <code translate="no" v-pre>README.md</code>. See Retype&#x27;s <a href="https://retype.com/configuration/page/#default-pages">page configuration</a> docs for details.</p>
+<p><code translate="no" v-pre>index.md</code> acts as the landing page for a section. It can be left empty, with just a level 1 heading. It can also be named <code translate="no" v-pre>README.md</code>. See Retype&#x27;s <a href="https://retype.com/configuration/page/#default-pages" class="outbound" target="_blank"><span>page configuration</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> docs for details.</p>
 <doc-anchor-target id="side-navigation-behavior-and-visibility-controls">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#side-navigation-behavior-and-visibility-controls">#</doc-anchor-trigger>
@@ -192,8 +213,8 @@
 <ul>
 <li><code translate="no" v-pre>expanded</code>: Whether or not the section should be expanded or collapsed</li>
 <li><code translate="no" v-pre>order</code>: Higher numbers appear higher up in navigation</li>
-<li><code translate="no" v-pre>icon</code>: Uses <a href="https://retype.com/components/octicons/">Octicons</a>, not Github emojis, as a decorative element. Folder icon shown if this parameter is omitted.</li>
-<li><code translate="no" v-pre>visibility</code>: <code translate="no" v-pre>public|hidden|protected|private</code>. If omitted, defaults to <code translate="no" v-pre>public</code>. Use the <code translate="no" v-pre>hidden</code> label in case you are making an extensive change.  See Retype&#x27;s <a href="https://retype.com/configuration/page/#visibility">visibility settings</a> for details.</li>
+<li><code translate="no" v-pre>icon</code>: Uses <a href="https://retype.com/components/octicons/" class="outbound" target="_blank"><span>Octicons</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a>, not Github emojis, as a decorative element. Folder icon shown if this parameter is omitted.</li>
+<li><code translate="no" v-pre>visibility</code>: <code translate="no" v-pre>public|hidden|protected|private</code>. If omitted, defaults to <code translate="no" v-pre>public</code>. Use the <code translate="no" v-pre>hidden</code> label in case you are making an extensive change.  See Retype&#x27;s <a href="https://retype.com/configuration/page/#visibility" class="outbound" target="_blank"><span>visibility settings</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> for details.</li>
 </ul>
 <p><code translate="no" v-pre>order</code>, <code translate="no" v-pre>icon</code> and <code translate="no" v-pre>visibility</code> properties can also be applied to a page, as follows.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -209,8 +230,8 @@ visibility: public
         <span>Sequencing logic</span>
     </h2>
 </doc-anchor-target>
-<p><a href="https://retype.com/configuration/page/#order">Retype provides many options</a> for deciding the sequence (or order) of sections and pages. This is controlled by the <code translate="no" v-pre>order</code> property, introduced in the previous section.</p>
-<p>This site <a href="https://retype.com/configuration/page/#order-by-number">orders by number</a>.</p>
+<p><a href="https://retype.com/configuration/page/#order" class="outbound" target="_blank"><span>Retype provides many options</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> for deciding the sequence (or order) of sections and pages. This is controlled by the <code translate="no" v-pre>order</code> property, introduced in the previous section.</p>
+<p>This site <a href="https://retype.com/configuration/page/#order-by-number" class="outbound" target="_blank"><span>orders by number</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a>.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
@@ -256,7 +277,7 @@ visibility: public
     </h3>
 </doc-anchor-target>
 <p>Link validation prevents navigation errors. While Retype CLI provides a list of link failures, it is better to validates links within the IDE.</p>
-<p>VS Code supports <a href="https://code.visualstudio.com/docs/languages/markdown#_link-validation">markdown link validation</a>. This has been enabled for this workspace; see <code translate="no" v-pre>.vscode/settings.json</code>. Please enable link validation if you use a different IDE, and inform other contributors via a change to this guide.</p>
+<p>VS Code supports <a href="https://code.visualstudio.com/docs/languages/markdown#_link-validation" class="outbound" target="_blank"><span>markdown link validation</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a>. This has been enabled for this workspace; see <code translate="no" v-pre>.vscode/settings.json</code>. Please enable link validation if you use a different IDE, and inform other contributors via a change to this guide.</p>
 <doc-anchor-target id="spell-checking">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#spell-checking">#</doc-anchor-trigger>
@@ -264,7 +285,7 @@ visibility: public
     </h3>
 </doc-anchor-target>
 <p>Use a spell checker in your IDE. This is a must.</p>
-<p>For VS Code, the <a href="https://marketplace.visualstudio.com/items/?itemName=streetsidesoftware.code-spell-checker">Code Spell Checker</a> extension works well. Not only does it spellcheck regular markdown text, it also checks embedded in code. For example, it will highlight <code translate="no" v-pre>Usres</code> in a function called <code translate="no" v-pre>getUsres</code>.</p>
+<p>For VS Code, the <a href="https://marketplace.visualstudio.com/items/?itemName=streetsidesoftware.code-spell-checker" class="outbound" target="_blank"><span>Code Spell Checker</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> extension works well. Not only does it spellcheck regular markdown text, it also checks embedded in code. For example, it will highlight <code translate="no" v-pre>Usres</code> in a function called <code translate="no" v-pre>getUsres</code>.</p>
 <p>If it detects a noun that you anticipate using repeatedly (like <code translate="no" v-pre>FHIR</code>), go to <code translate="no" v-pre>Spellings &gt; Add words to workspace settings</code> to add it to <code translate="no" v-pre>.vscode/settings.json</code> so that the word is not tagged for any other team members who also has the same extension installed.</p>
 <doc-anchor-target id="github-flavored-markdown-vs-retype-syntax">
     <h2>
@@ -320,7 +341,7 @@ visibility: public
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>This is a Retype alert. More variants with titles <a href="https://retype.com/components/alert/">described here</a></p>
+<p>This is a Retype alert. More variants with titles <a href="https://retype.com/components/alert/" class="outbound" target="_blank"><span>described here</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a></p>
         </div>
     </div>
 </div>
@@ -395,15 +416,29 @@ This is a Retype alert. More variants with titles [described here](https://retyp
     </h2>
 </doc-anchor-target>
 <p>Retype supports custom CSS styling via containers. However, be sparing in the use of custom CSS. IF you do, avoid inline styling.</p>
-<p>Read more <a href="https://retype.com/components/container/#custom-css-class">here</a>.</p>
+<p>Read more <a href="https://retype.com/components/container/#custom-css-class" class="outbound" target="_blank"><span>here</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a>.</p>
 <doc-anchor-target id="digramming-with-mermaid">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#digramming-with-mermaid">#</doc-anchor-trigger>
         <span>Digramming with Mermaid</span>
     </h2>
 </doc-anchor-target>
-<p>Retype supports Mermaid charts, but it many not be compatible with the latest release. As of April 2025, Retype supports Mermaid v 10.3, wheras 11 is already out. This leads to newer Mermaid chart types <a href="https://github.com/retypeapp/retype/issues/716">being unsupported</a>.</p>
+<p>Retype supports Mermaid charts, but it many not be compatible with the latest release. As of April 2025, Retype supports Mermaid v 10.3, wheras 11 is already out. This leads to newer Mermaid chart types <a href="https://github.com/retypeapp/retype/issues/716" class="outbound" target="_blank"><span>being unsupported</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a>.</p>
 <p>Despite this lag, use Mermaid charts as extensively as possible. In the short-term, use screenshots of Google slides or docs to speed up your work, but create a TODO issue to track conversion to Mermaid charts.</p>
+<div id="retype-backlinks">
+    <h2>See also</h2>
+    <div class="grid gap-4 [grid-template-columns:repeat(auto-fit,minmax(300px,1fr))]">
+        <a href="/contribution-guides/" class="group no-link">
+            <div class="flex flex-col">
+                <div>
+                    <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path d="M10.3 6.74a.75.75 0 0 1-.04 1.06l-2.908 2.7 2.908 2.7a.75.75 0 1 1-1.02 1.1l-3.5-3.25a.75.75 0 0 1 0-1.1l3.5-3.25a.75.75 0 0 1 1.06.04Zm3.44 1.06a.75.75 0 1 1 1.02-1.1l3.5 3.25a.75.75 0 0 1 0 1.1l-3.5 3.25a.75.75 0 1 1-1.02-1.1l2.908-2.7-2.908-2.7Z"/><path d="M1.5 4.25c0-.966.784-1.75 1.75-1.75h17.5c.966 0 1.75.784 1.75 1.75v12.5a1.75 1.75 0 0 1-1.75 1.75h-9.69l-3.573 3.573A1.458 1.458 0 0 1 5 21.043V18.5H3.25a1.75 1.75 0 0 1-1.75-1.75ZM3.25 4a.25.25 0 0 0-.25.25v12.5c0 .138.112.25.25.25h2.5a.75.75 0 0 1 .75.75v3.19l3.72-3.72a.749.749 0 0 1 .53-.22h10a.25.25 0 0 0 .25-.25V4.25a.25.25 0 0 0-.25-.25Z"/></svg>
+                    <span>Contributing to Agni</span>
+                </div>
+                <p>At present, Agni is open-source but closed-contribution; only employees of Lattice Innovations can generate pull requests to make code or</p>
+            </div>
+        </a>
+    </div>
+</div>
 
                 
                 <!-- Required only on API pages -->
@@ -441,7 +476,7 @@ This is a Retype alert. More variants with titles [described here](https://retyp
                     <ul class="flex flex-wrap items-center text-sm">
                     </ul>
                 </div>
-                <div id="retype-copyright" class="print:justify-center py-2 text-footer-text font-footer-link text-sm leading-relaxed"><p>© Copyright 2026. All rights reserved.</p></div>
+                <div id="retype-copyright" class="print:justify-center py-2 text-footer-text font-footer-link text-sm leading-relaxed"><p>© Copyright Lattice Innovations Pvt Ltd 2026.</p></div>
             </footer>
         </div>
     </div>

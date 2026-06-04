@@ -1,18 +1,18 @@
 input: .
 output: .retype
-
-url: agni.thelattice.in # Use your website address here
-
+url: agni.thelattice.in
+branding:
+  logo: images/wordmark-on-light.png
+  logoDark: images/wordmark-on-dark.png
+  label: Agni by Lattice
+links:
+- text: Go to main website
+  link: https://thelattice.in
 start:
   pro: true
-
-branding:
-  title: Project Name
-  label: Docs
-
-links:
-- text: Getting Started
-  link: https://retype.com/guides/getting-started/
-
+# integrations:
+#  plausible:
+#    domain: agni.thelattice.in
 footer:
-  copyright: "&copy; Copyright {{ year }}. All rights reserved."
+  copyright: "&copy; Copyright Lattice Innovations Pvt Ltd {{ year }}."
+poweredByRetype: false
