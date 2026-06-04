@@ -3,7 +3,7 @@ title: Home
 icon: home
 ---
 
-# <img src="/images/logomark-light.png" alt="logo" height = "50" width="50"> Agni
+# <img src="/images/logomark-light.png" alt="logo" height = "50" width="50"> What is Agni?
 Agni is a mobile-first software platform that supports population-scale healthcare delivery.
 
 :::card-grid
@@ -35,7 +35,7 @@ All of our repositories are in the public domain.
 - Android client: [https://github.com/LatticeInnovations/agni-android](https://github.com/LatticeInnovations/agni-android)
 - Facade server: [https://github.com/LatticeInnovations/agni-facade](https://github.com/LatticeInnovations/agni-facade)
 
-The Facade server interfaces with a plain vanilla HAPI FHIR server, [version 6.6.0](https://github.com/hapifhir/hapi-fhir-jpaserver-starter/tree/v6.6.0). We took care to stay within the bounds of a "standard" FHIR server.
+The Facade server interfaces with a plain vanilla HAPI FHIR server, [version 6.6.0](https://github.com/hapifhir/hapi-fhir-jpaserver-starter/tree/v6.6.0), which stores data on a PostgreSQL database.
 
 ## Motivation
 Specialized, facility-based healthcare presents an attractive market for health technology providers—as evidenced by the many hospital information management systems (HIMS) available today. In contrast, digital platforms for primary care are far fewer.

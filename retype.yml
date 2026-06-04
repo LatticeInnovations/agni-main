@@ -1,11 +1,10 @@
 input: .
 output: .retype
 
-url: docs.example.com # Use your website address here
+url: agni.thelattice.in # Use your website address here
 
 start:
-  # Uncomment the next line to try Retype Pro features
-  # pro: true
+  pro: true
 
 branding:
   title: Project Name
