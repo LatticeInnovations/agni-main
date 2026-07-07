@@ -18,3 +18,5 @@ footer:
 poweredByRetype: false
 backlinks:
   enabled: false
+breadcrumb:
+  home: ":icon-home:"
