@@ -32,17 +32,18 @@ The following terms are used in this policy with the meanings assigned under the
 | **Health Data** | Any personal data relating to the physical or mental health of an individual, the healthcare services provided to them, or related administrative data — as described by the Health Data Management Policy under the Ayushman Bharat Digital Mission and the Electronic Health Record (EHR) Standards for India, 2016. |
 | **Processing** | Any operation performed on personal data, including collection, storage, use, sharing, and erasure. |
 
-## 3. Data we collect
-The Agni platform collects and processes the following categories of personal data as part of its primary healthcare workflows. All data is structured using the **HL7 FHIR** standard.
+## 3. Data collected by your Data Fiduciary
+The Agni platform collects and processes the following categories of personal data as part of its primary healthcare workflows. All data is structured using the **HL7 FHIR** standard. This data is available to the Data Fiduciary, i.e. the entity that has deployed Agni.
 
 ### 3.1 Patient demographic data
 - Full name (first, middle, last)
 - Date of birth or age
-- Gender at birth
+- Sex at birth
 - Phone number
 - Email address
 - Home address (address line, city, postal code)
-- Government-issued identification numbers (Passport ID, Voter ID, Patient ID)
+- Government-issued identification numbers
+- Institution-issues identification number, such as patient ID
 
 ### 3.2 Clinical and health data
 - **Vitals**: height, weight, BMI, blood pressure, heart rate, respiratory rate, SpO2, temperature, blood glucose, total cholesterol, eye test results
@@ -70,7 +71,7 @@ The Agni platform collects and processes the following categories of personal da
 
 
 ## 4. Purpose of data collection
-We process personal data only for **lawful and specific purposes** that are directly related to primary healthcare delivery. These include:
+Agni enables the Data Fiduciary to process personal data for **lawful and specific purposes** that are directly related to primary healthcare delivery. These include:
 
 | Purpose | Description |
 |---------|-------------|
@@ -82,7 +83,7 @@ We process personal data only for **lawful and specific purposes** that are dire
 | **Public health reporting** | To enable aggregation and analysis of population health data through FHIR APIs that can connect with dashboards such as DHIS-2. |
 | **System administration** | To manage catchment areas, allocate healthcare workers, and maintain the operational integrity of the platform. |
 
-We do **not** process personal data for advertising, profiling, or any purpose unrelated to healthcare delivery.
+Lattice does not **not** process personal data for advertising, profiling, or any purpose unrelated to healthcare delivery.
 
 ## 5. Legal basis for processing
 Under the DPDP Act, 2023, personal data may be processed on the following grounds:
