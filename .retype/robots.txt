@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://agni.thelattice.in/sitemap.xml.gz

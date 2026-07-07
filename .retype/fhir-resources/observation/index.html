@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.0.0.833871258022">
+
+    <!-- See retype.com -->
+    <meta name="generator" content="Retype 4.0.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Observation</title>
+    <meta name="title" content="Observation">
+    <meta name="description" content="Observation resource is used to record vitals such as height, weight, respiratory rate, spO2, temperature, blood pressure, heart rate, blood glucose etc of">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://agni.thelattice.in/fhir-resources/observation/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://agni.thelattice.in/fhir-resources/observation/">
+    <meta property="og:title" content="Observation">
+    <meta property="og:description" content="Observation resource is used to record vitals such as height, weight, respiratory rate, spO2, temperature, blood pressure, heart rate, blood glucose etc of">
+    <meta property="og:site_name" content="">
+    <meta property="og:locale" content="en_US">
+
+    <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
+
+    <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
+    <link href="../../resources/css/retype.css?v=4.0.0.833871258022" rel="stylesheet">
+
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.0.0.833871258022" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=4.0.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.0.0.833871258022" data-turbo-eval="false" defer></script>
+
+    <link href="/static/custom.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
+    <div class="absolute bottom-0 left-0" style="top: 5rem; right: 50%"></div>
+
+    <header id="retype-header" class="sticky top-0 z-30 flex w-full h-16 bg-header-bg border-b border-header-border md:h-20">
+        <div class="container relative flex items-center justify-between pr-6 grow md:justify-start">
+            <!-- Mobile menu button skeleton -->
+            <button v-cloak class="skeleton retype-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-hidden rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
+            <div v-cloak id="retype-sidebar-left-toggle-button"></div>
+    
+            <!-- Logo -->
+            <div class="flex items-center justify-between h-full py-2 md:w-75">
+                <div class="flex items-center px-2 md:px-6">
+                    <a id="retype-branding-logo" href="../../" class="flex items-center leading-snug text-2xl">
+                        <span class="grow-0 shrink-0 overflow-hidden">
+                            <img class="max-h-10 dark:hidden md:inline-block" src="../../images/wordmark-on-light.png">
+                            <img class="max-h-10 hidden dark:inline-block" src="../../images/wordmark-on-dark.png">
+                        </span>
+                    </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">Agni by Lattice</span>
+                </div>
+    
+                <span class="hidden h-8 border-r md:inline-block border-base-border"></span>
+            </div>
+    
+            <div class="flex justify-between md:grow">
+                <!-- Top Nav -->
+                <nav id="retype-header-nav" class="hidden md:flex">
+                    <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
+                        <li class="mr-6">
+                            <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://thelattice.in">Go to main website</a>
+                        </li>
+    
+                    </ul>
+                </nav>
+    
+                <div v-cloak class="flex justify-end grow">
+                    <div id="retype-mobile-search-button"></div>
+                    <doc-search-desktop></doc-search-desktop>
+    
+                    <doc-theme-switch class="lg:ml-2"></doc-theme-switch>
+                    <doc-history></doc-history>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div id="retype-container" class="container relative flex bg-white">
+        <!-- Sidebar Skeleton -->
+        <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-sidebar-left-bg border-sidebar-left-border sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton">
+        
+            <div class="flex items-center h-16 px-6">
+                <input id="retype-filter-input-mock" class="w-full h-10 pl-8 px-3 py-2 transition-colors duration-200 ease-linear bg-filter-bg border border-filter-border rounded-lg shadow-none md:text-sm hover:border-filter-border-hover focus:outline-hidden focus:border-filter-border-focus placeholder-filter-placeholder" type="text">
+            </div>
+        
+            <div class="pl-6 mt-1 mb-4">
+                <div class="w-32 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                <div class="w-48 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                <div class="w-40 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                <div class="w-32 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                <div class="w-48 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                <div class="w-40 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+            </div>
+        
+        </div>
+        
+        <!-- Sidebar component -->
+        <doc-sidebar v-cloak>
+            <template #sidebar-footer>
+                <div class="shrink-0 mt-auto border-t md:bg-transparent md:border-none dark:border-base-border">
+        
+                    <div class="py-3 px-6 md:hidden border-b dark:border-base-border">
+                        <nav>
+                            <ul class="flex flex-wrap justify-center items-center">
+                                <li class="mr-6">
+                                    <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://thelattice.in">Go to main website</a>
+                                </li>
+        
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </template>
+        </doc-sidebar>
+
+        <div class="grow min-w-0 bg-body-bg">
+            <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
+<div class="flex">
+    <div id="retype-main" class="min-w-0 p-4 grow md:px-16">
+        <main class="relative pb-12 lg:pt-2">
+            <div class="retype-markdown" id="retype-content">
+                <!-- Rendered if sidebar right is enabled -->
+                <div id="retype-sidebar-right-toggle"></div>
+                <nav id="retype-breadcrumb" class="breadcrumb" aria-label="Breadcrumb">
+                    <ol role="list">
+                        <li class="pr-4">
+                            <a href="../../" class="pr-4">
+                                 What is Agni?
+                            </a>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
+                            </svg>
+                        </li>
+                        <li class="pr-4">
+                            <a href="../../fhir-resources/" class="pr-4">
+                                FHIR Resources
+                            </a>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
+                            </svg>
+                        </li>
+                        <li class="pr-4">
+                            <a href="../../fhir-resources/observation/" class="pr-4">
+                                Observation
+                            </a>
+                        </li>
+                    </ol>
+                </nav>
+
+                <!-- Page content  -->
+<doc-anchor-target id="observation" class="break-words">
+    <h1>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#observation">#</doc-anchor-trigger>
+        <span>Observation</span>
+    </h1>
+</doc-anchor-target>
+<p>Observation resource is used to record vitals such as height, weight, respiratory rate, spO2, temperature, blood pressure, heart rate, blood glucose etc of the patient. Each observation resource is used to record the details of a single entity.</p>
+<doc-anchor-target id="resource-details">
+    <h1>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#resource-details">#</doc-anchor-trigger>
+        <span>Resource Details</span>
+    </h1>
+</doc-anchor-target>
+<blockquote>
+<ul>
+<li>We can refer to the <a href="https://hl7.org/fhir/R4/observation.html" class="outbound" target="_blank"><span>link</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a> as well to check as per FHIR standard.</li>
+</ul>
+</blockquote>
+<ul>
+<li>We need to add a performer id of te logged in user in the resource as  well.</li>
+</ul>
+<blockquote>
+<p>Please use loinc code for filtering observation based on heart rate.</p>
+</blockquote>
+<doc-anchor-target id="resource-example-of-vitals">
+    <h1>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#resource-example-of-vitals">#</doc-anchor-trigger>
+        <span>Resource Example of Vitals</span>
+    </h1>
+</doc-anchor-target>
+<doc-anchor-target id="heart-rate">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#heart-rate">#</doc-anchor-trigger>
+        <span>Heart rate</span>
+    </h2>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">{
+  &quot;resourceType&quot;: &quot;Observation&quot;,
+  &quot;id&quot;: &quot;uuid&quot;,
+  &quot;status&quot;: &quot;final&quot;,
+  &quot;encounter&quot;: {
+    &quot;reference&quot;: &quot;Encounter/{encounter id}&quot;
+  },
+  &quot;category&quot;: [
+    {
+      &quot;coding&quot;: [
+        {
+          &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/observation-category&quot;,
+          &quot;code&quot;: &quot;vital-signs&quot;,
+          &quot;display&quot;: &quot;Vitals&quot;
+        }
+      ]
+    }
+  ],
+  &quot;code&quot;: {
+    &quot;coding&quot;: [
+      {
+        &quot;system&quot;: &quot;http://loinc.org&quot;,
+        &quot;code&quot;: &quot;8867-4&quot;,
+        &quot;display&quot;: &quot;heartRate&quot;
+      }
+    ]
+  },
+  &quot;subject&quot;: {
+    &quot;reference&quot;: &quot;Patient/12345&quot;
+  },
+  &quot;encounter&quot;: {
+    &quot;reference&quot;: &quot;Encounter/67890&quot;
+  },
+  &quot;effectiveDateTime&quot;: &quot;2024-09-19T10:30:00Z&quot;
+  &quot;component&quot;: [
+    {
+      &quot;code&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://loinc.org&quot;,
+            &quot;code&quot;: &quot;8867-4&quot;,
+            &quot;display&quot;: &quot;Heart rate&quot;
+      }
+        ]
+      },
+      &quot;valueQuantity&quot;: {
+        &quot;value&quot;: 72,
+        &quot;unit&quot;: &quot;beats/minute&quot;,
+        &quot;system&quot;: &quot;http://unitsofmeasure.org&quot;,
+        &quot;code&quot;: &quot;/min&quot;
+  }
+    }
+  ]
+}</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="blood-pressure">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#blood-pressure">#</doc-anchor-trigger>
+        <span>Blood pressure</span>
+    </h2>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">{
+  &quot;resourceType&quot;: &quot;Observation&quot;,
+  &quot;id&quot;: &quot;uuid&quot;,
+  &quot;status&quot;: &quot;final&quot;,
+  &quot;encounter&quot;: {
+    &quot;reference&quot;: &quot;Encounter/{encounter id}&quot;
+  },
+  &quot;category&quot;: [
+    {
+      &quot;coding&quot;: [
+        {
+          &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/observation-category&quot;,
+          &quot;code&quot;: &quot;vital-signs&quot;,
+          &quot;display&quot;: &quot;Vitals&quot;
+        }
+      ]
+    }
+  ],
+  &quot;code&quot;: {
+    &quot;coding&quot;: [
+      {
+        &quot;system&quot;: &quot;http://loinc.org&quot;,
+        &quot;code&quot;: &quot;35094-2&quot;,
+        &quot;display&quot;: &quot;Blood Pressure&quot;
+      }
+    ]
+  },
+  &quot;subject&quot;: {
+    &quot;reference&quot;: &quot;Patient/12345&quot;
+  },
+  &quot;encounter&quot;: {
+    &quot;reference&quot;: &quot;Encounter/67890&quot;
+  },
+  &quot;effectiveDateTime&quot;: &quot;2024-09-19T10:30:00Z&quot;,
+  &quot;component&quot;: [
+    {
+      &quot;code&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://loinc.org&quot;,
+            &quot;code&quot;: &quot;8480-6&quot;,
+            &quot;display&quot;: &quot;Systolic blood pressure&quot;
+          }
+        ]
+      },
+      &quot;valueQuantity&quot;: {
+        &quot;value&quot;: 120,
+        &quot;unit&quot;: &quot;mmHg&quot;,
+        &quot;system&quot;: &quot;http://unitsofmeasure.org&quot;,
+        &quot;code&quot;: &quot;mm[Hg]&quot;
+      }
+    },
+    {
+      &quot;code&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://loinc.org&quot;,
+            &quot;code&quot;: &quot;8462-4&quot;,
+            &quot;display&quot;: &quot;Diastolic blood pressure&quot;
+          }
+        ]
+      },
+      &quot;valueQuantity&quot;: {
+        &quot;value&quot;: 80,
+        &quot;unit&quot;: &quot;mmHg&quot;,
+        &quot;system&quot;: &quot;http://unitsofmeasure.org&quot;,
+        &quot;code&quot;: &quot;mm[Hg]&quot;
+      }
+    }
+  ],
+}</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="temperature">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#temperature">#</doc-anchor-trigger>
+        <span>Temperature</span>
+    </h2>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">{
+  &quot;resourceType&quot;: &quot;Observation&quot;,
+  &quot;id&quot;: &quot;uuid&quot;,
+  &quot;encounter&quot;: {
+    &quot;reference&quot;: &quot;Encounter/67890&quot;
+  }
+  &quot;status&quot;: &quot;final&quot;,
+  &quot;category&quot;: [
+    {
+      &quot;coding&quot;: [
+        {
+          &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/observation-category&quot;,
+          &quot;code&quot;: &quot;vital-signs&quot;,
+          &quot;display&quot;: &quot;Vitals&quot;
+        }
+      ]
+    }
+  ],
+  &quot;code&quot;: {
+    &quot;coding&quot;: [
+      {
+        &quot;system&quot;: &quot;http://loinc.org&quot;,
+        &quot;code&quot;: &quot;8310-5&quot;,
+        &quot;display&quot;: &quot;temperature&quot;
+      }
+    ]
+  },
+  &quot;component&quot;: [
+    {
+      &quot;code&quot;: {
+        &quot;coding&quot;: [
+          {
+        &quot;system&quot;: &quot;http://loinc.org&quot;,
+        &quot;code&quot;: &quot;8310-5&quot;,
+        &quot;display&quot;: &quot;Body temperature&quot;
+      }
+        ]
+      },
+      &quot;valueQuantity&quot;: {
+        &quot;value&quot;: 98.6,
+        &quot;unit&quot;: &quot;degrees Fahrenheit&quot;,
+        &quot;system&quot;: &quot;http://unitsofmeasure.org&quot;,
+        &quot;code&quot;: &quot;[degF]&quot;
+      }
+    }
+  ]
+  &quot;subject&quot;: {
+    &quot;reference&quot;: &quot;Patient/12345&quot;,
+    &quot;display&quot;: &quot;John Doe&quot;
+  },
+  &quot;effectiveDateTime&quot;: &quot;2024-09-19T10:30:00Z&quot;
+  }</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="glucose">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#glucose">#</doc-anchor-trigger>
+        <span>Glucose</span>
+    </h2>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">{
+  &quot;resourceType&quot;: &quot;Observation&quot;,
+  &quot;id&quot;: &quot;uuid&quot;,
+  &quot;status&quot;: &quot;final&quot;,
+  &quot;encounter&quot;: {
+    &quot;reference&quot;: &quot;Encounter/67890&quot;
+  }
+  &quot;category&quot;: [
+    {
+      &quot;coding&quot;: [
+        {
+          &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/observation-category&quot;,
+          &quot;code&quot;: &quot;vital-signs&quot;,
+          &quot;display&quot;: &quot;Vitals&quot;
+        }
+      ]
+    }
+  ],
+  &quot;code&quot;: {
+    &quot;coding&quot;: [
+      {
+        &quot;system&quot;: &quot;http://loinc.org&quot;,
+        &quot;code&quot;: &quot;74774-1&quot;,
+        &quot;display&quot;: &quot;glucose&quot;
+      }
+    ]
+  },
+  &quot;subject&quot;: {
+    &quot;reference&quot;: &quot;Patient/12345&quot;
+  },
+  &quot;component&quot;: [
+    {
+      &quot;code&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://loinc.org&quot;,
+            &quot;code&quot;: &quot;1558-6&quot;,
+            &quot;display&quot;: &quot;fasting&quot;
+          }
+        ],
+        &quot;text&quot;: &quot;Fasting Blood Glucose&quot;
+      },
+      &quot;valueQuantity&quot;: {
+        &quot;value&quot;: 90,
+        &quot;unit&quot;: &quot;mg/dL&quot;,
+        &quot;system&quot;: &quot;http://unitsofmeasure.org&quot;,
+        &quot;code&quot;: &quot;mg/dL&quot;
+      }
+    },
+    {
+      &quot;code&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://loinc.org&quot;,
+            &quot;code&quot;: &quot;74774-1&quot;,
+            &quot;display&quot;: &quot;random&quot;
+          }
+        ],
+        &quot;text&quot;: &quot;Random Blood Glucose&quot;
+      },
+      &quot;valueQuantity&quot;: {
+        &quot;value&quot;: 110,
+        &quot;unit&quot;: &quot;mg/dL&quot;,
+        &quot;system&quot;: &quot;http://unitsofmeasure.org&quot;,
+        &quot;code&quot;: &quot;mg/dL&quot;
+      }
+    }
+  ]
+}</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="height">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#height">#</doc-anchor-trigger>
+        <span>Height</span>
+    </h2>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">{
+  &quot;resourceType&quot;: &quot;Observation&quot;,
+  &quot;id&quot;: &quot;height-observation&quot;,
+  &quot;status&quot;: &quot;final&quot;,
+  &quot;category&quot;: [
+    {
+      &quot;coding&quot;: [
+        {
+          &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/observation-category&quot;,
+          &quot;code&quot;: &quot;vital-signs&quot;,
+          &quot;display&quot;: &quot;Vitals&quot;
+        }
+      ]
+    }
+  ],
+  &quot;code&quot;: {
+    &quot;coding&quot;: [
+      {
+        &quot;system&quot;: &quot;http://loinc.org&quot;,
+        &quot;code&quot;: &quot;8302-2&quot;,
+        &quot;display&quot;: &quot;height&quot;
+      }
+    ]
+  },
+  &quot;subject&quot;: {
+    &quot;reference&quot;: &quot;Patient/12345
+  },
+  &quot;effectiveDateTime&quot;: &quot;2024-09-19T09:00:00Z&quot;,
+  &quot;component&quot;: [
+    {
+      &quot;code&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://loinc.org&quot;,
+            &quot;code&quot;: &quot;8302-2&quot;,
+            &quot;display&quot;: &quot;height&quot;
+          }
+        ],
+        &quot;text&quot;: &quot;Height in feet&quot;
+      },
+      &quot;valueQuantity&quot;: {
+        &quot;value&quot;: 5,
+        &quot;unit&quot;: &quot;ft&quot;,
+        &quot;system&quot;: &quot;http://unitsofmeasure.org&quot;,
+        &quot;code&quot;: &quot;[ft_i]&quot;
+      }
+    },
+    {
+      &quot;code&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://loinc.org&quot;,
+            &quot;code&quot;: &quot;8302-2&quot;,
+            &quot;display&quot;: &quot;height&quot;
+          }
+        ],
+        &quot;text&quot;: &quot;Height in inches&quot;
+      },
+      &quot;valueQuantity&quot;: {
+        &quot;value&quot;: 9,
+        &quot;unit&quot;: &quot;in&quot;,
+        &quot;system&quot;: &quot;http://unitsofmeasure.org&quot;,
+        &quot;code&quot;: &quot;[in_i]&quot;
+      }
+    }
+  ]
+}
+</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="weight">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#weight">#</doc-anchor-trigger>
+        <span>Weight</span>
+    </h2>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">{
+  &quot;resourceType&quot;: &quot;Observation&quot;,
+  &quot;id&quot;: &quot;uuid&quot;,
+  &quot;status&quot;: &quot;final&quot;,
+  &quot;category&quot;: [
+    {
+      &quot;coding&quot;: [
+        {
+          &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/observation-category&quot;,
+          &quot;code&quot;: &quot;vital-signs&quot;,
+          &quot;display&quot;: &quot;Vitals&quot;
+        }
+      ]
+    }
+  ],
+  &quot;code&quot;: {
+    &quot;coding&quot;: [
+      {
+        &quot;system&quot;: &quot;http://loinc.org&quot;,
+        &quot;code&quot;: &quot;29463-7&quot;,
+        &quot;display&quot;: &quot;weight&quot;
+      }
+    ]
+  },
+  &quot;subject&quot;: {
+    &quot;reference&quot;: &quot;Patient/12345&quot;,
+    &quot;display&quot;: &quot;John Doe&quot;
+  },
+  &quot;effectiveDateTime&quot;: &quot;2024-09-19T09:00:00Z&quot;,
+    &quot;component&quot;: [
+    {
+      &quot;code&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://loinc.org&quot;,
+            &quot;code&quot;: &quot;29463-7&quot;,
+            &quot;display&quot;: &quot;weight&quot;
+          }
+        ]
+      },
+      &quot;valueQuantity&quot;: {
+        &quot;value&quot;: 70,
+        &quot;unit&quot;: &quot;kg&quot;,
+        &quot;system&quot;: &quot;http://unitsofmeasure.org&quot;,
+        &quot;code&quot;: &quot;kg&quot;
+    }
+    }
+  ]
+}</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="resource-example-of-cvd-risk-assessment">
+    <h1>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#resource-example-of-cvd-risk-assessment">#</doc-anchor-trigger>
+        <span>Resource Example of CVD risk assessment</span>
+    </h1>
+</doc-anchor-target>
+<doc-anchor-target id="diabetic-status">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#diabetic-status">#</doc-anchor-trigger>
+        <span>Diabetic Status</span>
+    </h2>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">{
+  &quot;resourceType&quot;: &quot;Observation&quot;,
+  &quot;id&quot;: &quot;45179171&quot;,
+  &quot;status&quot;: &quot;final&quot;,
+  &quot;encounter&quot;: {
+    &quot;reference&quot;: &quot;Encounter/67890&quot;
+  }
+  &quot;category&quot;: [
+    {
+      &quot;coding&quot;: [
+        {
+          &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/observation-category&quot;,
+          &quot;code&quot;: &quot;CVD&quot;,
+          &quot;display&quot;: &quot;CVD risk assessment&quot;
+        }
+      ]
+    }
+  ],
+  &quot;code&quot;: {
+        &quot;coding&quot;: [
+            {
+                &quot;system&quot;: &quot;http://loinc.org&quot;,
+                &quot;code&quot;: &quot;44069-8&quot;,
+                &quot;display&quot;: &quot;Diabetic status&quot;
+            }
+        ],
+        &quot;text&quot;: &quot;Diabetic status&quot;
+  },
+  &quot;effectiveDateTime&quot;: &quot;2024-09-19T10:30:00Z&quot;,
+  &quot;subject&quot;: {
+    &quot;reference&quot;: &quot;Patient/12345
+  },
+  &quot;performer&quot;: [
+        {
+            &quot;reference&quot;: &quot;Practitioner/463&quot;
+        }
+    ],
+  &quot;component&quot;: [
+    {
+      &quot;code&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://loinc.org&quot;,
+            &quot;code&quot;: &quot;33248-6&quot;,
+            &quot;display&quot;: &quot;Diabetic status&quot;
+          }
+        ],
+       &quot;text&quot;: &quot;Diabetic status&quot;
+      },
+      &quot;valueQuantity&quot;: {
+        &quot;value&quot;: 1,  // if 1 then diabetic, if 0 then non diabetic
+        &quot;system&quot;: &quot;http://unitsofmeasure.org&quot;
+      }
+    }
+  ]
+}</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="smoking-status-">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#smoking-status-">#</doc-anchor-trigger>
+        <span>Smoking status :</span>
+    </h2>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">{
+  &quot;resourceType&quot;: &quot;Observation&quot;,
+  &quot;id&quot;: &quot;45179172&quot;,
+  &quot;status&quot;: &quot;final&quot;,
+  &quot;encounter&quot;: {
+    &quot;reference&quot;: &quot;Encounter/67890&quot;
+  },
+  &quot;category&quot;: [
+    {
+      &quot;coding&quot;: [
+        {
+                    &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/observation-category&quot;,
+                    &quot;code&quot;: &quot;CVD&quot;,
+                    &quot;display&quot;: &quot;CVD risk assessment&quot;
+                }
+      ]
+    }
+  ],
+  &quot;code&quot;: {
+        &quot;coding&quot;: [
+            {
+                &quot;system&quot;: &quot;http://loinc.org&quot;,
+                &quot;code&quot;: &quot;72166-2&quot;,
+                &quot;display&quot;: &quot;smoking status&quot;
+            }
+        ],
+        &quot;text&quot;: &quot;Smoking Status&quot;
+  },
+  &quot;effectiveDateTime&quot;: &quot;2024-09-19T10:30:00Z&quot;,
+  &quot;subject&quot;: {
+    &quot;reference&quot;: &quot;Patient/12345&quot;
+  },
+  &quot;performer&quot;: [
+        {
+            &quot;reference&quot;: &quot;Practitioner/463&quot;
+        }
+  ],
+  &quot;component&quot;: [
+    {
+      &quot;code&quot;: {
+        &quot;coding&quot;: [
+          {
+            &quot;system&quot;: &quot;http://loinc.org&quot;,
+            &quot;code&quot;: &quot;72166-2&quot;,
+            &quot;display&quot;: &quot;smoking status&quot;
+          }
+        ],
+        &quot;text&quot;: &quot;Smoking Status&quot;
+      },
+      &quot;valueQuantity&quot;: {
+        &quot;value&quot;: 1,  // if 1 then smoker, if 0 then non-smoker
+        &quot;system&quot;: &quot;http://unitsofmeasure.org&quot;
+      }
+    }
+  ]
+}
+</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="blood-pressure-1">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#blood-pressure-1">#</doc-anchor-trigger>
+        <span>Blood Pressure</span>
+    </h2>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">{
+    &quot;resourceType&quot;: &quot;Observation&quot;,
+    &quot;id&quot;: &quot;2708&quot;,
+    &quot;meta&quot;: {
+        &quot;versionId&quot;: &quot;1&quot;,
+        &quot;lastUpdated&quot;: &quot;2024-10-27T05:26:59.887+00:00&quot;,
+        &quot;source&quot;: &quot;#Go0WOoeqGeT6a7Pr&quot;
+    },
+    &quot;status&quot;: &quot;final&quot;,
+    &quot;category&quot;: [
+        {
+            &quot;coding&quot;: [
+                {
+                    &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/observation-category&quot;,
+                    &quot;code&quot;: &quot;CVD&quot;,
+                    &quot;display&quot;: &quot;CVD risk assessment&quot;
+                }
+            ]
+        }
+    ],
+    &quot;code&quot;: {
+        &quot;coding&quot;: [
+            {
+              &quot;system&quot;: &quot;http://loinc.org&quot;,
+              &quot;code&quot;: &quot;35094-2&quot;,
+              &quot;display&quot;: &quot;Blood Pressure&quot;
+      }
+        ],
+        &quot;text&quot;: &quot;Blood Pressure&quot;
+    },
+    &quot;subject&quot;: {
+        &quot;reference&quot;: &quot;Patient/2361&quot;
+    },
+    &quot;encounter&quot;: {
+        &quot;reference&quot;: &quot;Encounter/2701&quot;
+    },
+    &quot;effectiveDateTime&quot;: &quot;2024-08-23T10:55:12+05:30&quot;,
+    &quot;performer&quot;: [
+        {
+            &quot;reference&quot;: &quot;Practitioner/463&quot;
+        }
+    ],
+    &quot;component&quot;: [
+        {
+            &quot;code&quot;: {
+                &quot;coding&quot;: [
+                    {
+                        &quot;system&quot;: &quot;http://loinc.org&quot;,
+                        &quot;code&quot;: &quot;8462-4&quot;,
+                        &quot;display&quot;: &quot;Diastolic blood pressure&quot;
+                    }
+                ],
+                &quot;text&quot;: &quot;Diastolic blood pressure&quot;
+            },
+            &quot;valueQuantity&quot;: {
+                &quot;value&quot;: 21,
+                &quot;unit&quot;: &quot;mmHg&quot;,
+                &quot;system&quot;: &quot;http://unitsofmeasure.org&quot;,
+                &quot;code&quot;: &quot;mm[Hg]&quot;
+            }
+        },
+        {
+            &quot;code&quot;: {
+                &quot;coding&quot;: [
+                    {
+                        &quot;system&quot;: &quot;http://loinc.org&quot;,
+                        &quot;code&quot;: &quot;8480-6&quot;,
+                        &quot;display&quot;: &quot;Systolic blood pressure&quot;
+                    }
+                ],
+                &quot;text&quot;: &quot;Systolic blood pressure&quot;
+            },
+            &quot;valueQuantity&quot;: {
+                &quot;value&quot;: 36,
+                &quot;unit&quot;: &quot;mmHg&quot;,
+                &quot;system&quot;: &quot;http://unitsofmeasure.org&quot;,
+                &quot;code&quot;: &quot;mm[Hg]&quot;
+            }
+        }
+    ]
+}</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="cholesterol">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#cholesterol">#</doc-anchor-trigger>
+        <span>Cholesterol</span>
+    </h2>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">{
+    &quot;resourceType&quot;: &quot;Observation&quot;,
+    &quot;id&quot;: &quot;2708&quot;,
+    &quot;meta&quot;: {
+        &quot;versionId&quot;: &quot;1&quot;,
+        &quot;lastUpdated&quot;: &quot;2024-10-27T05:26:59.887+00:00&quot;,
+        &quot;source&quot;: &quot;#Go0WOoeqGeT6a7Pr&quot;
+    },
+    &quot;status&quot;: &quot;final&quot;,
+    &quot;category&quot;: [
+        {
+            &quot;coding&quot;: [
+                {
+                    &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/observation-category&quot;,
+                    &quot;code&quot;: &quot;CVD
+                    &quot;display&quot;: &quot;CVD risk assessment&quot;
+                }
+            ]
+        }
+    ],
+    &quot;code&quot;: {
+        &quot;coding&quot;: [
+            {
+                &quot;system&quot;: &quot;http://loinc.org&quot;,
+                &quot;code&quot;: &quot;2093-3&quot;,
+                &quot;display&quot;: &quot;Cholesterol [Mass/volume] in Serum or Plasma&quot;
+            }
+        ],
+        &quot;text&quot;: &quot;Cholesterol&quot;
+    },
+    &quot;subject&quot;: {
+        &quot;reference&quot;: &quot;Patient/2361&quot;
+    },
+    &quot;encounter&quot;: {
+        &quot;reference&quot;: &quot;Encounter/2701&quot;
+    },
+    &quot;effectiveDateTime&quot;: &quot;2024-08-23T10:55:12+05:30&quot;,
+    &quot;performer&quot;: [
+        {
+            &quot;reference&quot;: &quot;Practitioner/463&quot;
+        }
+    ],
+    &quot;component&quot;: [
+        {
+            &quot;code&quot;: {
+                &quot;coding&quot;: [
+                    {
+                        &quot;system&quot;: &quot;http://loinc.org&quot;,
+                        &quot;code&quot;: &quot;2093-3&quot;,
+                        &quot;display&quot;: &quot;Cholesterol [Mass/volume] in Serum or Plasma&quot;
+                    }
+                ],
+                &quot;text&quot;: &quot;Cholesterol&quot;
+            },
+            &quot;valueQuantity&quot;: {
+                &quot;value&quot;: 5.2,
+                &quot;unit&quot;: &quot;mmol/L&quot;, // change if mg/dl
+                &quot;system&quot;: &quot;http://unitsofmeasure.org&quot;,
+                &quot;code&quot;: &quot;mmol/L&quot; // change if mg/dl
+            }
+        }
+    ]
+}</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="height-">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#height-">#</doc-anchor-trigger>
+        <span>Height :</span>
+    </h2>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">{
+    &quot;resourceType&quot;: &quot;Observation&quot;,
+    &quot;id&quot;: &quot;2393&quot;,
+    &quot;meta&quot;: {
+        &quot;versionId&quot;: &quot;1&quot;,
+        &quot;lastUpdated&quot;: &quot;2024-10-27T04:30:24.591+00:00&quot;,
+        &quot;source&quot;: &quot;#5GAqFxyl750CtKSU&quot;
+    },
+    &quot;status&quot;: &quot;final&quot;,
+    &quot;category&quot;: [
+        {
+            &quot;coding&quot;: [
+                {
+                    &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/observation-category&quot;,
+                    &quot;code&quot;: &quot;CVD&quot;,
+                    &quot;display&quot;: &quot;CVD risk assessment&quot;
+                }
+            ]
+        }
+    ],
+    &quot;code&quot;: {
+        &quot;coding&quot;: [
+            {
+                &quot;system&quot;: &quot;http://loinc.org&quot;,
+                &quot;code&quot;: &quot;8302-2&quot;,
+                &quot;display&quot;: &quot;height&quot;
+            }
+        ],
+        &quot;text&quot;: &quot;Height&quot;
+    },
+    &quot;subject&quot;: {
+        &quot;reference&quot;: &quot;Patient/2361&quot;
+    },
+    &quot;encounter&quot;: {
+        &quot;reference&quot;: &quot;Encounter/2392&quot;
+    },
+    &quot;effectiveDateTime&quot;: &quot;2024-09-17T09:50:02+05:30&quot;,
+    &quot;performer&quot;: [
+        {
+            &quot;reference&quot;: &quot;Practitioner/463&quot;
+        }
+    ],
+    &quot;component&quot;: [
+        {
+            &quot;code&quot;: {
+                &quot;coding&quot;: [
+                    {
+                        &quot;system&quot;: &quot;http://loinc.org&quot;,
+                        &quot;code&quot;: &quot;8302-2&quot;,
+                        &quot;display&quot;: &quot;feet&quot;
+                    }
+                ],
+                &quot;text&quot;: &quot;Height in feet&quot;
+            },
+            &quot;valueQuantity&quot;: {
+                &quot;value&quot;: 5,
+                &quot;unit&quot;: &quot;ft&quot;,
+                &quot;system&quot;: &quot;http://unitsofmeasure.org&quot;,
+                &quot;code&quot;: &quot;[ft_i]&quot;
+            }
+        },
+        {
+            &quot;code&quot;: {
+                &quot;coding&quot;: [
+                    {
+                        &quot;system&quot;: &quot;http://loinc.org&quot;,
+                        &quot;code&quot;: &quot;8302-2&quot;,
+                        &quot;display&quot;: &quot;inches&quot;
+                    }
+                ],
+                &quot;text&quot;: &quot;Height in inches&quot;
+            },
+            &quot;valueQuantity&quot;: {
+                &quot;value&quot;: 5,
+                &quot;unit&quot;: &quot;in&quot;,
+                &quot;system&quot;: &quot;http://unitsofmeasure.org&quot;,
+                &quot;code&quot;: &quot;[in_i]&quot;
+            }
+        }
+    ]
+}</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="weight-">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#weight-">#</doc-anchor-trigger>
+        <span>Weight :</span>
+    </h2>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">{
+    &quot;resourceType&quot;: &quot;Observation&quot;,
+    &quot;id&quot;: &quot;2404&quot;,
+    &quot;meta&quot;: {
+        &quot;versionId&quot;: &quot;1&quot;,
+        &quot;lastUpdated&quot;: &quot;2024-10-27T04:30:24.591+00:00&quot;,
+        &quot;source&quot;: &quot;#5GAqFxyl750CtKSU&quot;
+    },
+    &quot;status&quot;: &quot;final&quot;,
+    &quot;category&quot;: [
+        {
+            &quot;coding&quot;: [
+                {
+                    &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/observation-category&quot;,
+                    &quot;code&quot;: &quot;CVD&quot;,
+                    &quot;display&quot;: &quot;CVD risk assessment&quot;
+                }
+            ]
+        }
+    ],
+    &quot;code&quot;: {
+        &quot;coding&quot;: [
+            {
+                &quot;system&quot;: &quot;http://loinc.org&quot;,
+                &quot;code&quot;: &quot;29463-7&quot;,
+                &quot;display&quot;: &quot;weight&quot;
+            }
+        ],
+        &quot;text&quot;: &quot;Weight&quot;
+    },
+    &quot;subject&quot;: {
+        &quot;reference&quot;: &quot;Patient/2361&quot;
+    },
+    &quot;encounter&quot;: {
+        &quot;reference&quot;: &quot;Encounter/2402&quot;
+    },
+    &quot;effectiveDateTime&quot;: &quot;2024-09-30T09:51:53+05:30&quot;,
+    &quot;performer&quot;: [
+        {
+            &quot;reference&quot;: &quot;Practitioner/463&quot;
+        }
+    ],
+    &quot;component&quot;: [
+        {
+            &quot;code&quot;: {
+                &quot;coding&quot;: [
+                    {
+                        &quot;system&quot;: &quot;http://loinc.org&quot;,
+                        &quot;code&quot;: &quot;29463-7&quot;,
+                        &quot;display&quot;: &quot;weight&quot;
+                    }
+                ],
+                &quot;text&quot;: &quot;Weight&quot;
+            },
+            &quot;valueQuantity&quot;: {
+                &quot;value&quot;: 36,
+                &quot;unit&quot;: &quot;kg&quot;,
+                &quot;system&quot;: &quot;http://unitsofmeasure.org&quot;,
+                &quot;code&quot;: &quot;kg&quot;
+            }
+        }
+    ]
+}</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="bmi">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#bmi">#</doc-anchor-trigger>
+        <span>BMI</span>
+    </h2>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">{
+    &quot;resourceType&quot;: &quot;Observation&quot;,
+    &quot;id&quot;: &quot;2404&quot;,
+    &quot;meta&quot;: {
+        &quot;versionId&quot;: &quot;1&quot;,
+        &quot;lastUpdated&quot;: &quot;2024-10-27T04:30:24.591+00:00&quot;,
+        &quot;source&quot;: &quot;#5GAqFxyl750CtKSU&quot;
+    },
+    &quot;status&quot;: &quot;final&quot;,
+    &quot;category&quot;: [
+        {
+            &quot;coding&quot;: [
+                {
+                    &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/observation-category&quot;,
+                    &quot;code&quot;: &quot;CVD&quot;,
+                    &quot;display&quot;: &quot;CVD risk assessment&quot;
+                }
+            ]
+        }
+    ],
+    &quot;code&quot;: {
+        &quot;coding&quot;: [
+            {
+                &quot;system&quot;: &quot;http://loinc.org&quot;,
+                &quot;code&quot;: &quot;9156-5&quot;,
+                &quot;display&quot;: &quot;Body mass index (BMI) [Ratio]&quot;
+            }
+        ],
+        &quot;text&quot;: &quot;BMI&quot;
+    },
+    &quot;subject&quot;: {
+        &quot;reference&quot;: &quot;Patient/2361&quot;
+    },
+    &quot;encounter&quot;: {
+        &quot;reference&quot;: &quot;Encounter/2402&quot;
+    },
+    &quot;effectiveDateTime&quot;: &quot;2024-09-30T09:51:53+05:30&quot;,
+    &quot;performer&quot;: [
+        {
+            &quot;reference&quot;: &quot;Practitioner/463&quot;
+        }
+    ],
+    &quot;component&quot;: [
+        {
+            &quot;code&quot;: {
+                &quot;coding&quot;: [
+                    {
+                        &quot;system&quot;: &quot;http://loinc.org&quot;,
+                        &quot;code&quot;: &quot;9156-5&quot;,
+                        &quot;display&quot;: &quot;Body mass index (BMI) [Ratio]&quot;
+                    }
+                ],
+                &quot;text&quot;: &quot;BMI&quot;
+            },
+            &quot;valueQuantity&quot;: {
+                &quot;value&quot;: 22.5,
+                &quot;unit&quot;: &quot;kg/m2&quot;,
+                &quot;system&quot;: &quot;http://unitsofmeasure.org&quot;,
+                &quot;code&quot;: &quot;kg/m2&quot;
+            }
+        }
+    ]
+}</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="cvd-risk-percentage-">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#cvd-risk-percentage-">#</doc-anchor-trigger>
+        <span>CVD Risk percentage :</span>
+    </h2>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">{
+    &quot;resourceType&quot;: &quot;Observation&quot;,
+    &quot;id&quot;: &quot;2505&quot;,
+    &quot;status&quot;: &quot;final&quot;,
+    &quot;category&quot;: [
+        {
+            &quot;coding&quot;: [
+                {
+                    &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/observation-category&quot;,
+                    &quot;code&quot;: &quot;CVD&quot;,
+                    &quot;display&quot;: &quot;CVD risk assessment&quot;
+                }
+            ]
+        }
+    ],
+    &quot;code&quot;: {
+        &quot;coding&quot;: [
+            {
+                &quot;system&quot;: &quot;http://loinc.org&quot;,
+                &quot;code&quot;: &quot;72333-9&quot;,
+                &quot;display&quot;: &quot;Cardiovascular disease risk score&quot;
+            }
+        ],
+        &quot;text&quot;: &quot;CVD Risk Percentage&quot;
+    },
+    &quot;subject&quot;: {
+        &quot;reference&quot;: &quot;Patient/2361&quot;
+    },
+    &quot;encounter&quot;: {
+        &quot;reference&quot;: &quot;Encounter/2402&quot;
+    },
+    &quot;effectiveDateTime&quot;: &quot;2024-11-19T10:00:00+05:30&quot;,
+    &quot;performer&quot;: [
+        {
+            &quot;reference&quot;: &quot;Practitioner/463&quot;
+        }
+    ],
+    &quot;component&quot;: [
+        {
+            &quot;code&quot;: {
+               &quot;coding&quot;: [
+                  {
+                      &quot;system&quot;: &quot;http://loinc.org&quot;,
+                      &quot;code&quot;: &quot;72333-9&quot;,
+                      &quot;display&quot;: &quot;Cardiovascular disease risk score&quot;
+                  }
+                ],
+                &quot;text&quot;: &quot;CVD Risk Percentage&quot;
+            },
+            &quot;valueQuantity&quot;: {
+                &quot;value&quot;: 15.3,
+                &quot;unit&quot;: &quot;%&quot;,
+                &quot;system&quot;: &quot;http://unitsofmeasure.org&quot;,
+                &quot;code&quot;: &quot;%&quot;
+            }
+        }
+    ]
+}
+</code></pre>
+</doc-codeblock></div>
+<div id="retype-backlinks">
+    <h2>See also</h2>
+    <div class="grid gap-4 [grid-template-columns:repeat(auto-fit,minmax(300px,1fr))]">
+        <a href="/facade-api-docs/cvd-risk-assessment/" class="group no-link">
+            <div class="flex flex-col">
+                <div>
+                    <span>Cvd risk assessment</span>
+                </div>
+                <p>This section covers the flow of CVD risk assessment.</p>
+            </div>
+        </a>
+        <a href="/fhir-resources/" class="group no-link">
+            <div class="flex flex-col">
+                <div>
+                    <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path d="M14.265 1.627c0 3.545 1.869 5.327 3.479 7.021 1.54 1.62 3.006 3.163 3.006 6.102 0 4.812-3.753 8.25-8.565 8.25-4.813 0-8.935-3.421-8.935-8.25 0-2.039.962-4.011 2.509-4.899.305-.175.672.007.803.334C7.563 12.684 8.797 12.64 9.437 12c.388-.387.47-1.116-.004-2.062-2.405-4.812 1.863-8.279 4.2-8.854.336-.082.615.198.632.543ZM12.185 21.5c4.059 0 7.065-2.84 7.065-6.75 0-2.337-1.093-3.489-2.678-5.158l-.021-.023c-1.44-1.517-3.139-3.351-3.649-6.557a6.148 6.148 0 0 0-1.911 1.76c-.787 1.144-1.147 2.633-.216 4.495.603 1.205.777 2.74-.277 3.794-.657.657-1.762 1.1-2.956.586-.752-.324-1.353-.955-1.838-1.79-.567.706-.954 1.74-.954 2.893 0 3.847 3.288 6.75 7.435 6.75Z"/></svg>
+                    <span>FHIR Resources</span>
+                </div>
+                <p>Appointment</p>
+            </div>
+        </a>
+        <a href="/facade-api-docs/vitals/" class="group no-link">
+            <div class="flex flex-col">
+                <div>
+                    <span>Vitals</span>
+                </div>
+                <p>This section covers the flow of vitals section</p>
+            </div>
+        </a>
+    </div>
+</div>
+
+                
+                <!-- Required only on API pages -->
+                <doc-toolbar-member-filter-no-results></doc-toolbar-member-filter-no-results>
+            </div>
+            <footer id="retype-content-footer" class="clear-both">
+            
+                <nav id="retype-nextprev" class="print:hidden flex mt-14">
+                    <div class="w-1/2">
+                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../fhir-resources/immunization-recommendation/">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                            <span>
+                                <span class="block text-xs font-normal text-base-text-muted">Previous</span>
+                                <span class="block mt-1">Immunization​Recommendation</span>
+                            </span>
+                        </a>
+                    </div>
+            
+                    <div class="w-1/2">
+                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../fhir-resources/immunization/">
+                            <span>
+                                <span class="block text-xs font-normal text-right text-base-text-muted">Next</span>
+                                <span class="block mt-1">Immunization</span>
+                            </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                        </a>
+                    </div>
+                </nav>
+            </footer>
+        </main>
+
+        <div id="retype-page-footer" class="print:border-none border-t border-base-border pt-6 mb-8">
+            <footer class="flex flex-wrap items-center justify-between print:justify-center">
+                <div id="retype-footer-links" class="print:hidden">
+                    <ul class="flex flex-wrap items-center text-sm">
+                    </ul>
+                </div>
+                <div id="retype-copyright" class="print:justify-center py-2 text-footer-text font-footer-link text-sm leading-relaxed"><p>© Copyright Lattice Innovations Pvt Ltd 2026.</p></div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Rendered if sidebar right is enabled -->
+    <!-- Sidebar right skeleton-->
+    <div v-cloak class="fixed top-0 bottom-0 right-0 translate-x-full bg-sidebar-right-bg border-sidebar-right-border lg:sticky lg:border-l lg:shrink-0 lg:pt-6 lg:translate-x-0 sm:w-1/2 lg:w-64 lg:z-0 md:w-104 sidebar-right skeleton">
+        <div class="pl-5">
+            <div class="w-32 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+            <div class="w-48 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+            <div class="w-40 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+        </div>
+    </div>
+
+    <!-- User should be able to hide sidebar right -->
+    <doc-sidebar-right v-cloak></doc-sidebar-right>
+</div>
+
+        </div>
+    </div>
+
+    <doc-search-mobile></doc-search-mobile>
+    <doc-back-to-top></doc-back-to-top>
+</div>
+
+
+    <div id="retype-overlay-target"></div>
+
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Observation", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+</body>
+</html>

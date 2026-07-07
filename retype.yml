@@ -1,0 +1,22 @@
+input: .
+output: .retype
+url: agni.thelattice.in
+branding:
+  logo: images/wordmark-on-light.png
+  logoDark: images/wordmark-on-dark.png
+  label: Agni by Lattice
+links:
+- text: Go to main website
+  link: https://www.thelattice.in
+start:
+  pro: true
+integrations:
+  plausible:
+    domain: agni.thelattice.in
+footer:
+  copyright: "&copy; Copyright Lattice Innovations Pvt Ltd {{ year }}."
+poweredByRetype: false
+backlinks:
+  enabled: false
+breadcrumb:
+  home: ":icon-home:"
