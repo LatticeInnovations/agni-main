@@ -7,12 +7,12 @@ branding:
   label: Agni by Lattice
 links:
 - text: Go to main website
-  link: https://thelattice.in
+  link: https://www.thelattice.in
 start:
   pro: true
-# integrations:
-#  plausible:
-#    domain: agni.thelattice.in
+integrations:
+  plausible:
+    domain: agni.thelattice.in
 footer:
   copyright: "&copy; Copyright Lattice Innovations Pvt Ltd {{ year }}."
 poweredByRetype: false
