@@ -16,3 +16,5 @@ start:
 footer:
   copyright: "&copy; Copyright Lattice Innovations Pvt Ltd {{ year }}."
 poweredByRetype: false
+backlinks:
+  enabled: false

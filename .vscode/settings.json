@@ -45,7 +45,8 @@
         "tele",
         "thelattice",
         "Tikroul",
-        "walkin"
+        "walkin",
+        "wordmark"
     ],
     "markdown.validate.enabled": true,
     "markdown.validate.ignoredLinks": [
