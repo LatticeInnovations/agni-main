@@ -1,0 +1,101 @@
+﻿# Home
+
+> Agni is a mobile-first software platform that supports population-scale healthcare delivery.
+
+- [Home](https://agni.thelattice.in/readme.md): Home
+- [Key features](https://agni.thelattice.in/key-features/index.md): This section cover salient features of Agni.
+- [User stories](https://agni.thelattice.in/user-stories/index.md): User stories allow us to visualize the environment where we wish to deploy Agni, and imagine the people for whom we are building it. Tools have to suit both the person, and the process.
+- [Model design](https://agni.thelattice.in/model-design/index.md): Organization
+- [FHIR facade API](https://agni.thelattice.in/facade-api-docs/index.md): API specifications to perform CRUD operations on a variety of FHIR resources.
+- [FHIR Resources](https://agni.thelattice.in/fhir-resources/index.md): Appointment
+- [Android screenshots](https://agni.thelattice.in/mockup-android/index.md): Start from patient landing screen
+- [Contributing to Agni](https://agni.thelattice.in/contribution-guides/index.md): At present, Agni is open-source but closed-contribution; only employees of Lattice Innovations can generate pull requests to make code or documentation changes.
+- [Business model](https://agni.thelattice.in/business-model.md): Agni is developed by Lattice Innovations, a healthcare technology design and consulting firm. We offer consulting services to, and build software platforms for our Clients.
+
+## Key features
+
+- [Offline-first design](https://agni.thelattice.in/key-features/offline-first.md): Public health systems have a tiered structure — beginning with home care, followed by community, primary, and secondary+ care. The more distributed the tier, the more interruptions it faces while accessing the internet.
+- [FHIR data model](https://agni.thelattice.in/key-features/fhir-data-model.md): FHIR has seen widespread adoption globally, particularly in high-income nations, as illustrated below<a id="fnref:1" href="#fn:1"
+- [Data partitioning](https://agni.thelattice.in/key-features/data-partitioning.md): Access control is naturally a part of any system's security. For Agni, access control also has a utilitarian aspect: users needs access to relevant data, quickly.
+- [Representing relationships](https://agni.thelattice.in/key-features/relationships.md): One of the unique features of Agni is its ability to relate individuals to one another.
+- [Ready-to-use pharmacopoeia](https://agni.thelattice.in/key-features/pharmacopoeia.md): We are in the process of incorporating the WHO’s essential medicine list into a FHIR-friendly format; about half has been completed. The dataset does not contain brand names; it only contains formulations.
+- [Multi-module architecture](https://agni.thelattice.in/key-features/multi-module-architecture.md): When we started developing Agni, the project was relatively simple, with a few key features, like patient registration and list view. Everything resided
+
+## User stories
+
+- [Walk-in visit](https://agni.thelattice.in/user-stories/01-walk-in-visit.md): None
+- [Lab test](https://agni.thelattice.in/user-stories/02-lab-test.md): Walk-in visit
+- [Consultation](https://agni.thelattice.in/user-stories/03-consultation.md): Lab test
+- [Dispensing](https://agni.thelattice.in/user-stories/04-dispensing.md): Consultation
+- [Follow-up visit](https://agni.thelattice.in/user-stories/05-follow-up.md): Dispensing
+- [Referral to another PHC](https://agni.thelattice.in/user-stories/06-referred-out.md): Follow-up visit
+- [Referral visit](https://agni.thelattice.in/user-stories/07-referral-visit.md): Referral out to another PHC
+
+## Model design
+
+- [Organizations](https://agni.thelattice.in/model-design/organization.md): Any organization that deploys Agni needs to be able to create its own identity within the system. By doing so, the organization is able to link its members, such as doctors, nurses, paramedics, pharmacists and administrative staff, to a common entity.
+- [Practitioners](https://agni.thelattice.in/model-design/practitioner.md): A primary healthcare system delivers services through care providers, or practitioners, who play a variety of roles, such as:
+- [Scheduling](https://agni.thelattice.in/model-design/scheduling.md): In India, primary care facilities typically see 20-50 patients each day. Most patients walk-in for an unscheduled appointment, usually for acute care<a
+- [Referrals](https://agni.thelattice.in/model-design/referral.md): The referral module allows Practitioners to refer patients to other facilities that are better equipped to treat them. Since Agni is designed for PHCs, we
+- [Dispensing medicines](https://agni.thelattice.in/model-design/dispensing.md): Data and workflow model using FHIR
+
+## FHIR facade API
+
+- [Patient](https://agni.thelattice.in/facade-api-docs/patient.md): id: datatype - string, description uuid will be required if a resource is created using the bundle,
+- [Appointment and Scheduling](https://agni.thelattice.in/facade-api-docs/appointments-scheduling.md): Transfer content from the internal Google document, which is not publicly accessible. Remove this message once done.
+- [Prescription upload](https://agni.thelattice.in/facade-api-docs/prescription-upload.md): Users can choose to take a photo of a prescription, instead of typing it in. On upload, three resources are created, Encounter, DocumentReference and MedicationRequest.
+- [Immunization](https://agni.thelattice.in/facade-api-docs/immunization.md): Immunization or vaccination API captures the details of the patients and the vaccines administered to them. It is split into 2 APIs:
+- [Lab reports](https://agni.thelattice.in/facade-api-docs/lab-reports.md): Endpoint : POST /sync/DiagnosticReport
+- [Medical record](https://agni.thelattice.in/facade-api-docs/medical-record.md): Medical records store lab test results.
+- [Resolving race condition](https://agni.thelattice.in/facade-api-docs/race-condition.md): On October 24, 2024, we encountered a race condition in our API synchronization from the app.
+- [CVD assessment](https://agni.thelattice.in/facade-api-docs/cvd-assessment.md): Endpoint : POST /v1/sync/CVD
+- [Cvd risk assessment](https://agni.thelattice.in/facade-api-docs/cvd-risk-assessment.md): This section covers the flow of CVD risk assessment.
+- [FileUpload](https://agni.thelattice.in/facade-api-docs/fileupload.md): File upload in Facade
+- [Get Immunization Recommendation List](https://agni.thelattice.in/facade-api-docs/get-immunization-recommendation-list.md): We will not use this, as we will need to find all patients first at backend and then find their Immunization Recommendation resource. Also using this method we won't have any control in using pagination as the count of response data will not be accurate.
+- [ICD 10 integration](https://agni.thelattice.in/facade-api-docs/icd-10-integration.md): This document contains information how the ICD code will be saved in Database and how to API to fetch all the ICD codes.
+- [MedicationDispense](https://agni.thelattice.in/facade-api-docs/medicationdispense.md): The medication dispense allows medicines records to be maintained by pharmacy.
+- [Prescription](https://agni.thelattice.in/facade-api-docs/prescription.md): Each prescription is broken down into 2 APIs:
+- [Symptoms and diagnoses](https://agni.thelattice.in/facade-api-docs/symptoms-diagnoses.md): This section describes the flow of symptoms and diagnoses section.
+- [Update document notes](https://agni.thelattice.in/facade-api-docs/update-document-notes.md): Document Notes can be updated whether it is document uploaded in prescription, medical report or lab report.
+- [Vital APIs](https://agni.thelattice.in/facade-api-docs/vital-apis.md): Endpoint : POST /v1/sync/Observation
+- [Vitals](https://agni.thelattice.in/facade-api-docs/vitals.md): This section covers the flow of vitals section
+
+## FHIR Resources
+
+- [Appointment](https://agni.thelattice.in/fhir-resources/appointment.md): This resource will be used to store an Appointment data for a particular patient.
+- [Schedule](https://agni.thelattice.in/fhir-resources/schedule.md): The Schedule resource provides containers of time, or time-windows, that can be booked using an Appointment. The time period contained in a schedule can be further subdivided using Slots.
+- [Slot](https://agni.thelattice.in/fhir-resources/slot.md): This resource provides a unit of time that can be booked using the Appointment resource. Slots are a sub0-division of the Schedule resource.
+- [Patient](https://agni.thelattice.in/fhir-resources/patient.md): This resource will be used to store the data of a Patient.
+- [Person](https://agni.thelattice.in/fhir-resources/person.md): This resource will be used to store the data of a Person. It references the Patient resource.
+- [RelatedPerson](https://agni.thelattice.in/fhir-resources/related-person.md): This resource will be used to store the data of a Related Person to a Patient, which will reference another Patient resouce of linked Patient.
+- [Encounter](https://agni.thelattice.in/fhir-resources/encounter.md): This is Encounter resource
+- [ImmunizationRecommendation](https://agni.thelattice.in/fhir-resources/immunization-recommendation.md): This resource will be used to store Vaccine Recommendation data for a particular patient.
+- [Observation](https://agni.thelattice.in/fhir-resources/observation.md): Observation resource is used to record vitals such as height, weight, respiratory rate, spO2, temperature, blood pressure, heart rate, blood glucose etc of the patient.
+- [Immunization](https://agni.thelattice.in/fhir-resources/immunization.md): Immunization resource captures the details of the vaccine taken by a patient.
+- [ImmunizationEncounter](https://agni.thelattice.in/fhir-resources/immunizationencounter.md): When the hospital fills a patient's immunization details, a new sub encounter will be created with type Immunization management. This encounter will have reference to the main appointment encounter.
+- [Condition](https://agni.thelattice.in/fhir-resources/condition.md): Condition resource is used to record symptoms and diagnoses made about the patient. It also includes health conditions that do not have a negative outcome, such as a pregnancy.
+- [DiagnosticReport](https://agni.thelattice.in/fhir-resources/diagnosticreport.md): DiagnosticReport resource is used to record symptoms and diagnoses made during the patient.
+- [DispenseEncounter](https://agni.thelattice.in/fhir-resources/dispenseencounter.md)
+- [DocumentManifest](https://agni.thelattice.in/fhir-resources/document-manifest.md): DocumentManifest resource serves as a way to group multiple healthcare-related documents and other resources into a single logical package.So, it can be used to store medical report of the patient.
+- [DocumentReference](https://agni.thelattice.in/fhir-resources/document-reference.md): This consist of Document reference that contains the url of photo uploaded by user in prescription.
+- [DocumentReference: Immunization](https://agni.thelattice.in/fhir-resources/documentreference-immunization.md): This consist of Document reference that contains the url of photo uploaded by user in vaccination which links to vaccination encounter.
+- [Lab report encounter](https://agni.thelattice.in/fhir-resources/lab-report-encounter.md): When a user creates a lab report by uploading a document, then a new encounter is created with type lab-report-encounter. This encounter will have reference to the main appointment encounter.
+- [Location](https://agni.thelattice.in/fhir-resources/location.md): This is location resource
+- [Medical report encounter](https://agni.thelattice.in/fhir-resources/medical-report-encounter.md): When a user creates a medical report by uploading a document, then a new encounter is created with type medical-report-encounter. This encounter will have reference to the main appointment encounter.
+- [Medication dispense](https://agni.thelattice.in/fhir-resources/medication-dispense.md)
+- [Medication request](https://agni.thelattice.in/fhir-resources/medication-request.md): This consist of medication Request / Prescription.
+- [Medication request photo upload](https://agni.thelattice.in/fhir-resources/medication-request-photo-upload.md): This consist of medication Request / Prescription where user can upload a photo for prescription.
+- [MedicationList](https://agni.thelattice.in/fhir-resources/medication-list.md): Each object in the MedicationList maps to a specific formulation that can be dispensed by the Pharmacy.
+- [Organization](https://agni.thelattice.in/fhir-resources/organization.md): This is Organization resource.
+- [Prescription encounter document](https://agni.thelattice.in/fhir-resources/prescription-encounter-document.md): When a user creates a prescription by uploading a document, then a new encounter is created with type prescription-encounter-document. This encounter will have reference to the main appointment encounter.
+- [Prescription encounter form](https://agni.thelattice.in/fhir-resources/prescription-encounter-form.md): When user will fill up the prescription, a new sub encounter will be created with type prescription-encounter-form. This encounter will have reference to the main appointment encounter.
+- [Symptom diagnosis encounter](https://agni.thelattice.in/fhir-resources/symptom-diagnosis-encounter.md): This is sub encounter created when a symptom and diagnosis is created. Condition resource is linked to this sub encounter and this sub encounter is linked to main appointment encounter.
+- [Vitals encounter](https://agni.thelattice.in/fhir-resources/vitals-encounter.md): This is a record keeping encnounter of vitals created at the given time
+
+## Contributing to Agni
+
+- [Style guide](https://agni.thelattice.in/contribution-guides/style-guide.md): This style guide assumes that you have Retype up and running. Once you build and view the site locally, spend 30 minutes browsing through Retype's docs on configuration and components.
+
+## Legal
+
+- [Privacy Policy](https://agni.thelattice.in/legal/privacy-policy.md): Agni Platform — Privacy Policy
